@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -94,80 +93,6 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-2">Reliable</h3>
               <p className="text-gray-400">Built with stability and reliability in mind for uninterrupted gaming sessions.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Screenshots */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Community Screenshots</h2>
-          <div className="text-center mb-8">
-            <p className="text-xl text-gray-300 mb-4">
-              Share your GamePilot experience! Submit screenshots from your gameplay to be featured here.
-            </p>
-            <a 
-              href="/community" 
-              className="inline-block px-6 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition-colors"
-            >
-              Join Discord to Share Screenshots
-            </a>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-1.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-2.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-3.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-4.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-5.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <Image 
-                src="/gamepilot-6.png" 
-                alt="What theme will you choose?" 
-                width={640}
-                height={360}
-                className="w-full h-full object-cover"
-              />
             </div>
           </div>
         </div>
