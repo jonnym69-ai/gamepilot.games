@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -115,44 +116,56 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-1.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-2.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-3.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-4.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-5.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-              <img 
+              <Image 
                 src="/gamepilot-6.png" 
                 alt="What theme will you choose?" 
+                width={640}
+                height={360}
                 className="w-full h-full object-cover"
               />
             </div>
