@@ -101,7 +101,18 @@ export default function Home() {
       {/* Screenshots */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Screenshots</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Community Screenshots</h2>
+          <div className="text-center mb-8">
+            <p className="text-xl text-gray-300 mb-4">
+              Share your GamePilot experience! Submit screenshots from your gameplay to be featured here.
+            </p>
+            <a 
+              href="/community" 
+              className="inline-block px-6 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition-colors"
+            >
+              Join Discord to Share Screenshots
+            </a>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="aspect-video bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center">
@@ -111,7 +122,8 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                     </svg>
                   </div>
-                  <p className="text-gray-500 text-sm">Screenshot {i}</p>
+                  <p className="text-gray-500 text-sm">Your screenshot here!</p>
+                  <p className="text-xs text-gray-600 mt-1">Share on Discord</p>
                 </div>
               </div>
             ))}
