@@ -115,6 +115,29 @@ export default function Download() {
               </Link>
             </div>
           </div>
+
+          <div className="mt-12">
+            <h3 className="text-xl font-bold mb-4">Try GamePilot 0.1.0</h3>
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-2xl mx-auto">
+              <p className="text-gray-400 mb-6">
+                Get the early version of GamePilot to see how it all began!
+              </p>
+              
+              {/* Itch.io Embed Iframe */}
+              <div className="flex justify-center">
+                <iframe 
+                  frameBorder="0" 
+                  src="https://itch.io/embed/4327426?bg_color=2e055a&fg_color=d16607&link_color=624bfd&border_color=63448d" 
+                  width="552" 
+                  height="167"
+                  className="max-w-full"
+                  title="GamePilot 0.1.0 on itch.io"
+                >
+                  <a href="https://moz91.itch.io/gamepilot">Gamepilot by MoZ91</a>
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
