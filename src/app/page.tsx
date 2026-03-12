@@ -309,7 +309,7 @@ const testimonials = [
     name: "James M.",
     role: "Discord Member",
     colors: "from-purple-400 to-blue-400",
-    text: "Finally found a game to play! The mood-based recommendations are a game-changer. I&apos;ve discovered so many hidden gems I forgot I owned."
+    text: "The mood-based recommendations are incredible. I finally have a system that understands what I want to play based on how I&apos;m feeling. Game-changer!"
   },
   {
     initials: "SL",
@@ -330,7 +330,7 @@ const testimonials = [
     name: "Alex J.",
     role: "Community Moderator",
     colors: "from-orange-400 to-yellow-400",
-    text: "The Surprise Me feature is addictive! I&apos;ve played games I never would have picked myself. Best discovery tool ever."
+    text: "As a moderator, I see how much the community loves this app. The dev is responsive, features get implemented based on feedback, and the support is incredible. Best gaming community I&apos;ve been part of!"
   },
   {
     initials: "RP",
