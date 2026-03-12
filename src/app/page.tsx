@@ -84,11 +84,11 @@ export default function Home() {
       {/* GamePilot Trailer */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Watch the Trailer</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Watch the Latest GamePilot Update</h2>
           <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.youtube.com/embed/q9icL1a3pmM"
-              title="GamePilot Trailer"
+              src="https://www.youtube.com/embed/lNTDweeNSfM"
+              title="GamePilot Latest Update"
               className="w-full h-full"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div className="flex space-x-6 mb-4">
               <a 
-                href="https://youtube.com/@mozmakesstuff?si=f6oeFxqs6BoL62ee" 
+                href="https://youtube.com/@mozmakesstuff?si=OzuCVp-HYAmjv7Zm" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"

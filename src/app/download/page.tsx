@@ -142,8 +142,8 @@ export default function Download() {
             <div>
               <h4 className="font-semibold mb-4">Community</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
+                <li><a href="https://youtube.com/@mozmakesstuff?si=OzuCVp-HYAmjv7Zm" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
                 <li><a href="https://discord.gg/K9sEA4dn" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Discord</a></li>
-                <li><a href="https://youtube.com/@mozmakesstuff?si=f6oeFxqs6BoL62ee" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
                 <li><a href="https://www.reddit.com/r/Gamepilot/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Reddit</a></li>
               </ul>
             </div>

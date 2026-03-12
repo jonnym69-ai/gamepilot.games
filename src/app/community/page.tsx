@@ -129,7 +129,7 @@ export default function Community() {
           <div className="flex flex-col items-center">
             <div className="flex space-x-6 mb-4">
               <a 
-                href="https://youtube.com/@mozmakesstuff?si=f6oeFxqs6BoL62ee" 
+                href="https://youtube.com/@mozmakesstuff?si=OzuCVp-HYAmjv7Zm" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"
