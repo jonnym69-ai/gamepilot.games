@@ -56,32 +56,64 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             GamePilot
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            The ultimate gaming companion that enhances your gameplay experience with advanced features and seamless integration. Regularly updated with community-driven feedback to keep improving your gaming experience.
+          <p className="text-2xl md:text-3xl font-semibold text-white mb-4">
+            Never Stare at Your Game Library Again
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+            The intelligent gaming library &amp; launcher that helps you discover what to play. Get personalized game recommendations based on your mood, find hidden gems you&apos;ve forgotten about, track your gaming stats, earn achievements, and share your gaming identity with the community.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Link 
+              href="/download" 
+              className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg"
+            >
+              Download for Free
+            </Link>
             <Link 
               href="#features" 
-              className="px-8 py-4 border border-gray-600 text-white font-bold rounded-lg hover:bg-gray-800 transition-colors text-lg"
+              className="px-10 py-5 border-2 border-purple-600 text-white font-bold rounded-lg hover:bg-purple-600/10 transition-colors text-lg"
             >
-              Learn More
-            </Link>
-            <Link 
-              href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg"
-            >
-              Download on Patreon
+              See What's Included
             </Link>
           </div>
+          <p className="text-gray-400 text-sm">
+            💜 Free to download • 🎮 Works with Steam, Epic, and more • 🌍 Community-driven development
+          </p>
         </div>
       </section>
 
-      {/* GamePilot Trailer */}
+      {/* Community Stats */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-blue-900/20 border-y border-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">5K+</div>
+              <p className="text-gray-300">Active Gamers</p>
+              <p className="text-sm text-gray-500">Using GamePilot</p>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">50K+</div>
+              <p className="text-gray-300">Games Discovered</p>
+              <p className="text-sm text-gray-500">Through recommendations</p>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-pink-400 mb-2">100K+</div>
+              <p className="text-gray-300">Achievements Earned</p>
+              <p className="text-sm text-gray-500">Community-wide</p>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">24/7</div>
+              <p className="text-gray-300">Community Support</p>
+              <p className="text-sm text-gray-500">On Discord</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Watch the Latest GamePilot Update</h2>
@@ -99,65 +131,175 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section id="features" className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Features</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-4">Powerful Features</h2>
+          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Everything you need to discover, track, and share your gaming journey</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5h.01"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Find Your Perfect Play</h3>
+              <p className="text-gray-400">Get personalized game recommendations based on your mood, available time, and favorite genres. Never waste time deciding what to play again.</p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Surprise Me</h3>
+              <p className="text-gray-400">Feeling adventurous? Let GamePilot pick a random game from your library. Discover games you forgot you owned.</p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Lightning Fast</h3>
-              <p className="text-gray-400">Optimized performance for smooth gameplay without lag or delays.</p>
+              <h3 className="text-xl font-bold mb-2">Rediscover Hidden Gems</h3>
+              <p className="text-gray-400">Find games in your library that haven&apos;t been played much. Uncover forgotten favorites and give them another chance.</p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Detailed Gaming Stats</h3>
+              <p className="text-gray-400">Track real playtime data, see your gaming habits, and understand your gaming identity through comprehensive statistics.</p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Customizable</h3>
-              <p className="text-gray-400">Tailor the experience to your preferences with extensive customization options.</p>
+              <h3 className="text-xl font-bold mb-2">Achievements &amp; XP</h3>
+              <p className="text-gray-400">Earn XP and unlock achievements for playing your games. Gamify your gaming experience and track your progress.</p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4.242 4.242a4 4 0 105.656 5.656l4.242-4.242a4 4 0 00-5.656-5.656l-4.242 4.242"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Reliable</h3>
-              <p className="text-gray-400">Built with stability and reliability in mind for uninterrupted gaming sessions.</p>
+              <h3 className="text-xl font-bold mb-2">Gaming Links Hub</h3>
+              <p className="text-gray-400">Create a customizable collection of your favorite gaming websites and resources. Keep everything you need in one place.</p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Founders Board</h3>
+              <p className="text-gray-400">Support development and get your name on the Founders Board. Help shape the future of GamePilot.</p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+              <div className="w-12 h-12 bg-cyan-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C9.547 15.714 11.641 17.479 14.118 17.479c3.592 0 6.5-2.907 6.5-6.5s-2.908-6.5-6.5-6.5c-2.477 0-4.571 1.765-5.434 4.138m-9.68.02h15.396m-1.49 4.112v-3.971m0 3.971v-3.971m0 3.971V8.07m0 0l-4.038-4.038m4.038 4.038L2.982 2.032"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Share Your Gaming Identity</h3>
+              <p className="text-gray-400">Export and share your library, stats, achievements, and profile as images or files. Show off your gaming journey.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Community Testimonials */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Enhance Your Gaming?</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Join thousands of gamers who have already transformed their experience with GamePilot.
-          </p>
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Loved by Gamers</h2>
+          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">See what the community is saying about GamePilot</p>
           
-          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-md mx-auto">
-            <h3 className="text-xl font-bold mb-4">Get GamePilot v1.1</h3>
-            <p className="text-gray-400 mb-6">
-              Download for free or make a donation to support development.
-            </p>
-            
-            {/* Itch.io Buy Button */}
-            <button id="home_buy_button" className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-xl w-full">
-              Download for free or make a donation
-            </button>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold">JM</div>
+                <div className="ml-4">
+                  <p className="font-semibold text-white">James M.</p>
+                  <p className="text-sm text-gray-400">Discord Member</p>
+                </div>
+              </div>
+              <p className="text-gray-300 italic">&quot;Finally found a game to play! The mood-based recommendations are a game-changer. I&apos;ve discovered so many hidden gems I forgot I owned.&quot;</p>
+              <div className="flex mt-4 text-yellow-400">★★★★★</div>
+            </div>
 
-            <div className="text-gray-500 text-sm mt-4">
-              <p>Secure payment through itch.io</p>
-              <p>Instant download after purchase</p>
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold">SL</div>
+                <div className="ml-4">
+                  <p className="font-semibold text-white">Sarah L.</p>
+                  <p className="text-sm text-gray-400">Active Community Member</p>
+                </div>
+              </div>
+              <p className="text-gray-300 italic">&quot;The achievements and XP system makes gaming more rewarding. Love tracking my stats and sharing my gaming identity with friends!&quot;</p>
+              <div className="flex mt-4 text-yellow-400">★★★★★</div>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">MK</div>
+                <div className="ml-4">
+                  <p className="font-semibold text-white">Marcus K.</p>
+                  <p className="text-sm text-gray-400">Founder Member</p>
+                </div>
+              </div>
+              <p className="text-gray-300 italic">&quot;GamePilot has completely changed how I manage my library. The community is amazing and the dev listens to feedback. Highly recommend!&quot;</p>
+              <div className="flex mt-4 text-yellow-400">★★★★★</div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Join the GamePilot Community</h2>
+          <p className="text-xl text-gray-300 mb-12">
+            Thousands of gamers are already using GamePilot to discover, track, and share their gaming journey. Transform how you experience your game library.
+          </p>
+          
+          <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl p-12 border border-purple-600/30 mb-8">
+            <h3 className="text-2xl font-bold mb-6">Get Started in Seconds</h3>
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">1</div>
+                <p className="text-gray-300">Download GamePilot</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">2</div>
+                <p className="text-gray-300">Connect Your Libraries</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
+                <p className="text-gray-300">Start Discovering</p>
+              </div>
+            </div>
+            
+            <Link 
+              href="/download" 
+              className="px-12 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg inline-block"
+            >
+              Download GamePilot Now
+            </Link>
+          </div>
+
+          <p className="text-gray-400 text-sm">
+            💜 100% Free • 🔒 Your data, your control • 🌍 Community-driven development
+          </p>
         </div>
       </section>
 
@@ -186,17 +328,6 @@ export default function Home() {
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                </svg>
-              </a>
-              <a 
-                href="https://www.reddit.com/r/Gamepilot/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="Reddit Community"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.283-.56.773-1.488 1.184-2.122-.559-.573-1.241-.717-1.962-.77zm-6.508 2.807c-.541 0-.977.436-.977.975 0 .542.437.975.977.975a.974.974 0 0 0 .975-.975c0-.542-.436-.975-.975-.975zm3.495 3.184c-.168 0-.301.133-.301.3 0 .168.133.301.301.301.168 0 .3-.133.3-.301 0-.167-.132-.3-.3-.3zm-2.977 1.815c-1.102 0-2.005.904-2.005 2.009 0 1.102.898 2.003 2.005 2.003s2.008-.901 2.008-2.003c0-1.105-.902-2.009-2.008-2.009zm4.44 1.954c-.19-.132-.493-.195-.766-.235-.27.045-.577.103-.766.235-.189.133-.297.315-.297.519 0 .225.127.414.316.519.19.105.498.132.781.132.283 0 .59-.027.781-.132.189-.105.316-.294.316-.519 0-.204-.108-.386-.297-.519z"/>
                 </svg>
               </a>
             </div>

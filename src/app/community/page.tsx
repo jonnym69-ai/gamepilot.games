@@ -93,6 +93,63 @@ export default function Community() {
               <h3 className="text-xl font-bold mb-2">Early Access</h3>
               <p className="text-gray-400">Be the first to know about new features and updates.</p>
             </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-pink-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Shape the Future</h3>
+              <p className="text-gray-400">Your feedback directly influences GamePilot&apos;s development.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Friendly Community</h3>
+              <p className="text-gray-400">Join a welcoming group of passionate gamers.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-cyan-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Exclusive Events</h3>
+              <p className="text-gray-400">Participate in community challenges and events.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Values */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Our Community Values</h2>
+          <p className="text-center text-gray-400 mb-12">GamePilot is built by gamers, for gamers. Here&apos;s what we stand for:</p>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">🎮 Gamer-First</h3>
+              <p className="text-gray-300">Every decision we make is guided by what&apos;s best for our gaming community. Your experience matters most.</p>
+            </div>
+            
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">💬 Your Voice Counts</h3>
+              <p className="text-gray-300">We actively listen to community feedback and implement features based on what you ask for. Your ideas shape GamePilot.</p>
+            </div>
+            
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-4 text-pink-400">🤝 Supportive Community</h3>
+              <p className="text-gray-300">We foster a welcoming, inclusive environment where all gamers feel valued and supported.</p>
+            </div>
+            
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">🚀 Continuous Growth</h3>
+              <p className="text-gray-300">GamePilot evolves constantly. Regular updates and new features keep the experience fresh and exciting.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -148,17 +205,6 @@ export default function Community() {
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                </svg>
-              </a>
-              <a 
-                href="https://www.reddit.com/r/Gamepilot/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="Reddit Community"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.283-.56.773-1.488 1.184-2.122-.559-.573-1.241-.717-1.962-.77zm-6.508 2.807c-.541 0-.977.436-.977.975 0 .542.437.975.977.975a.974.974 0 0 0 .975-.975c0-.542-.436-.975-.975-.975zm3.495 3.184c-.168 0-.301.133-.301.3 0 .168.133.301.301.301.168 0 .3-.133.3-.301 0-.167-.132-.3-.3-.3zm-2.977 1.815c-1.102 0-2.005.904-2.005 2.009 0 1.102.898 2.003 2.005 2.003s2.008-.901 2.008-2.003c0-1.105-.902-2.009-2.008-2.009zm4.44 1.954c-.19-.132-.493-.195-.766-.235-.27.045-.577.103-.766.235-.189.133-.297.315-.297.519 0 .225.127.414.316.519.19.105.498.132.781.132.283 0 .59-.027.781-.132.189-.105.316-.294.316-.519 0-.204-.108-.386-.297-.519z"/>
                 </svg>
               </a>
             </div>
