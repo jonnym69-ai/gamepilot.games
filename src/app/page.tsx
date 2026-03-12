@@ -337,7 +337,7 @@ const testimonials = [
     name: "Rachel P.",
     role: "Patreon Supporter",
     colors: "from-indigo-400 to-purple-400",
-    text: "Rediscover feature saved my gaming life. Found so many games with low playtime that I actually love. Worth every penny!"
+    text: "Rediscover feature saved my gaming life. Found so many games with low playtime that I actually love. Absolutely worth supporting!"
   },
   {
     initials: "TW",
