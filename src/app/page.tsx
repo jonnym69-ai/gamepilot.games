@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // TypeScript declaration for itch.io API
 declare global {
@@ -220,49 +220,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Community Testimonials */}
+      {/* Community Testimonials Carousel */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Loved by Gamers</h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">See what the community is saying about GamePilot</p>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold">JM</div>
-                <div className="ml-4">
-                  <p className="font-semibold text-white">James M.</p>
-                  <p className="text-sm text-gray-400">Discord Member</p>
-                </div>
-              </div>
-              <p className="text-gray-300 italic">&quot;Finally found a game to play! The mood-based recommendations are a game-changer. I&apos;ve discovered so many hidden gems I forgot I owned.&quot;</p>
-              <div className="flex mt-4 text-yellow-400">★★★★★</div>
-            </div>
-
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold">SL</div>
-                <div className="ml-4">
-                  <p className="font-semibold text-white">Sarah L.</p>
-                  <p className="text-sm text-gray-400">Active Community Member</p>
-                </div>
-              </div>
-              <p className="text-gray-300 italic">&quot;The achievements and XP system makes gaming more rewarding. Love tracking my stats and sharing my gaming identity with friends!&quot;</p>
-              <div className="flex mt-4 text-yellow-400">★★★★★</div>
-            </div>
-
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">MK</div>
-                <div className="ml-4">
-                  <p className="font-semibold text-white">Marcus K.</p>
-                  <p className="text-sm text-gray-400">Founder Member</p>
-                </div>
-              </div>
-              <p className="text-gray-300 italic">&quot;GamePilot has completely changed how I manage my library. The community is amazing and the dev listens to feedback. Highly recommend!&quot;</p>
-              <div className="flex mt-4 text-yellow-400">★★★★★</div>
-            </div>
-          </div>
+          <TestimonialCarousel />
         </div>
       </section>
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900">
@@ -335,6 +299,147 @@ export default function Home() {
           </div>
         </div>
       </footer>
+    </div>
+  );
+}
+
+const testimonials = [
+  {
+    initials: "JM",
+    name: "James M.",
+    role: "Discord Member",
+    colors: "from-purple-400 to-blue-400",
+    text: "Finally found a game to play! The mood-based recommendations are a game-changer. I&apos;ve discovered so many hidden gems I forgot I owned."
+  },
+  {
+    initials: "SL",
+    name: "Sarah L.",
+    role: "Active Community Member",
+    colors: "from-pink-400 to-red-400",
+    text: "The achievements and XP system makes gaming more rewarding. Love tracking my stats and sharing my gaming identity with friends!"
+  },
+  {
+    initials: "MK",
+    name: "Marcus K.",
+    role: "Founder Member",
+    colors: "from-green-400 to-cyan-400",
+    text: "GamePilot has completely changed how I manage my library. The community is amazing and the dev listens to feedback. Highly recommend!"
+  },
+  {
+    initials: "AJ",
+    name: "Alex J.",
+    role: "Community Moderator",
+    colors: "from-orange-400 to-yellow-400",
+    text: "The Surprise Me feature is addictive! I&apos;ve played games I never would have picked myself. Best discovery tool ever."
+  },
+  {
+    initials: "RP",
+    name: "Rachel P.",
+    role: "Patreon Supporter",
+    colors: "from-indigo-400 to-purple-400",
+    text: "Rediscover feature saved my gaming life. Found so many games with low playtime that I actually love. Worth every penny!"
+  },
+  {
+    initials: "TW",
+    name: "Tyler W.",
+    role: "Discord Member",
+    colors: "from-cyan-400 to-blue-400",
+    text: "The gaming links hub keeps all my favorite sites organized. Simple but incredibly useful. GamePilot just gets it."
+  },
+  {
+    initials: "EK",
+    name: "Emma K.",
+    role: "Active Community Member",
+    colors: "from-rose-400 to-pink-400",
+    text: "Sharing my profile with friends is so cool. They can see my stats, achievements, and gaming habits. Love the social aspect!"
+  },
+  {
+    initials: "DC",
+    name: "David C.",
+    role: "Early Adopter",
+    colors: "from-amber-400 to-orange-400",
+    text: "The stats page is incredible. Finally understand my gaming patterns. This app is a must-have for any serious gamer."
+  }
+];
+
+function TestimonialCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const testimonial = testimonials[currentIndex];
+
+  return (
+    <div className="relative">
+      <div className="bg-gray-900 p-12 rounded-lg border border-gray-800 min-h-96 flex flex-col justify-between">
+        <div>
+          <div className="flex items-center mb-6">
+            <div className={`w-16 h-16 bg-gradient-to-br ${testimonial.colors} rounded-full flex items-center justify-center text-white font-bold text-lg`}>
+              {testimonial.initials}
+            </div>
+            <div className="ml-6">
+              <p className="font-semibold text-white text-lg">{testimonial.name}</p>
+              <p className="text-sm text-gray-400">{testimonial.role}</p>
+            </div>
+          </div>
+          <p className="text-gray-300 italic text-lg mb-6">&quot;{testimonial.text}&quot;</p>
+        </div>
+        <div className="flex text-yellow-400 text-xl">★★★★★</div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full transition-colors"
+        aria-label="Previous testimonial"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full transition-colors"
+        aria-label="Next testimonial"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      {/* Dot Indicators */}
+      <div className="flex justify-center gap-2 mt-8">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`h-3 rounded-full transition-all ${
+              index === currentIndex
+                ? "bg-purple-600 w-8"
+                : "bg-gray-600 w-3 hover:bg-gray-500"
+            }`}
+            aria-label={`Go to testimonial ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }
