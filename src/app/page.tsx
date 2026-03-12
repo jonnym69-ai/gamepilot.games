@@ -118,16 +118,9 @@ export default function Home() {
       </section>
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Watch the Latest GamePilot Update</h2>
-          <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.youtube.com/embed/lNTDweeNSfM"
-              title="GamePilot Latest Update"
-              className="w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <h2 className="text-4xl font-bold text-center mb-12">See GamePilot in Action</h2>
+          <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30">
+            <img src="/gifs/gp gif1.gif" alt="GamePilot Demo" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -138,85 +131,93 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-4">Powerful Features</h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Everything you need to discover, track, and share your gaming journey</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5h.01"/>
-                </svg>
+          <div className="space-y-16">
+            {/* Feature 1 with GIF */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4">Find Your Perfect Play</h3>
+                <p className="text-gray-400 text-lg mb-4">Get personalized game recommendations based on your mood, available time, and favorite genres. Never waste time deciding what to play again.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Find Your Perfect Play</h3>
-              <p className="text-gray-400">Get personalized game recommendations based on your mood, available time, and favorite genres. Never waste time deciding what to play again.</p>
+              <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
+                <img src="/gifs/gp gif 2.gif" alt="Find Your Perfect Play Demo" className="w-full h-full object-cover" />
+              </div>
             </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
+            {/* Feature 2 with GIF */}
+            <div className="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
+              <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
+                <img src="/gifs/gp gif 3.gif" alt="Surprise Me Demo" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Surprise Me</h3>
-              <p className="text-gray-400">Feeling adventurous? Let GamePilot pick a random game from your library. Discover games you forgot you owned.</p>
+              <div>
+                <h3 className="text-3xl font-bold mb-4">Surprise Me</h3>
+                <p className="text-gray-400 text-lg mb-4">Feeling adventurous? Let GamePilot pick a random game from your library. Discover games you forgot you owned.</p>
+              </div>
             </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
+            {/* Feature 3 with GIF */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4">Rediscover Hidden Gems</h3>
+                <p className="text-gray-400 text-lg mb-4">Find games in your library that haven&apos;t been played much. Uncover forgotten favorites and give them another chance.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Rediscover Hidden Gems</h3>
-              <p className="text-gray-400">Find games in your library that haven&apos;t been played much. Uncover forgotten favorites and give them another chance.</p>
+              <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
+                <img src="/gifs/gp gif 4.gif" alt="Rediscover Hidden Gems Demo" className="w-full h-full object-cover" />
+              </div>
             </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                </svg>
+            {/* Feature 4 with GIF */}
+            <div className="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
+              <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
+                <img src="/gifs/gp gif 5.gif" alt="Detailed Gaming Stats Demo" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Detailed Gaming Stats</h3>
-              <p className="text-gray-400">Track real playtime data, see your gaming habits, and understand your gaming identity through comprehensive statistics.</p>
+              <div>
+                <h3 className="text-3xl font-bold mb-4">Detailed Gaming Stats</h3>
+                <p className="text-gray-400 text-lg mb-4">Track real playtime data, see your gaming habits, and understand your gaming identity through comprehensive statistics.</p>
+              </div>
             </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                </svg>
+            {/* Feature 5 with GIF */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-4">Achievements &amp; XP</h3>
+                <p className="text-gray-400 text-lg mb-4">Earn XP and unlock achievements for playing your games. Gamify your gaming experience and track your progress.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Achievements &amp; XP</h3>
-              <p className="text-gray-400">Earn XP and unlock achievements for playing your games. Gamify your gaming experience and track your progress.</p>
+              <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
+                <img src="/gifs/gp gif 6.gif" alt="Achievements and XP Demo" className="w-full h-full object-cover" />
+              </div>
             </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4.242 4.242a4 4 0 105.656 5.656l4.242-4.242a4 4 0 00-5.656-5.656l-4.242 4.242"/>
-                </svg>
+            {/* Additional Features Grid */}
+            <div className="grid md:grid-cols-2 gap-8 mt-16">
+              <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+                <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4.242 4.242a4 4 0 105.656 5.656l4.242-4.242a4 4 0 00-5.656-5.656l-4.242 4.242"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Gaming Links Hub</h3>
+                <p className="text-gray-400">Create a customizable collection of your favorite gaming websites and resources. Keep everything you need in one place.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Gaming Links Hub</h3>
-              <p className="text-gray-400">Create a customizable collection of your favorite gaming websites and resources. Keep everything you need in one place.</p>
-            </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
+              <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+                <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Founders Board</h3>
+                <p className="text-gray-400">Support development and get your name on the Founders Board. Help shape the future of GamePilot.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Founders Board</h3>
-              <p className="text-gray-400">Support development and get your name on the Founders Board. Help shape the future of GamePilot.</p>
-            </div>
 
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
-              <div className="w-12 h-12 bg-cyan-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C9.547 15.714 11.641 17.479 14.118 17.479c3.592 0 6.5-2.907 6.5-6.5s-2.908-6.5-6.5-6.5c-2.477 0-4.571 1.765-5.434 4.138m-9.68.02h15.396m-1.49 4.112v-3.971m0 3.971v-3.971m0 3.971V8.07m0 0l-4.038-4.038m4.038 4.038L2.982 2.032"/>
-                </svg>
+              <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
+                <div className="w-12 h-12 bg-cyan-600 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C9.547 15.714 11.641 17.479 14.118 17.479c3.592 0 6.5-2.907 6.5-6.5s-2.908-6.5-6.5-6.5c-2.477 0-4.571 1.765-5.434 4.138m-9.68.02h15.396m-1.49 4.112v-3.971m0 3.971v-3.971m0 3.971V8.07m0 0l-4.038-4.038m4.038 4.038L2.982 2.032"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-2">Share Your Gaming Identity</h3>
+                <p className="text-gray-400">Export and share your library, stats, achievements, and profile as images or files. Show off your gaming journey.</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Share Your Gaming Identity</h3>
-              <p className="text-gray-400">Export and share your library, stats, achievements, and profile as images or files. Show off your gaming journey.</p>
             </div>
           </div>
         </div>
