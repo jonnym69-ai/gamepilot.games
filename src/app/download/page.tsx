@@ -72,7 +72,7 @@ export default function Download() {
             {/* Itch.io Buy Button */}
             <div className="mb-8">
               <button id="buy_button" className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-xl">
-                Buy My Game!
+                Download for free or make a donation
               </button>
             </div>
 

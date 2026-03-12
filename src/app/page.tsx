@@ -1,6 +1,42 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
+
+// TypeScript declaration for itch.io API
+declare global {
+  interface Window {
+    Itch?: {
+      attachBuyButton: (element: HTMLElement, options: { user: string; game: string }) => void;
+    };
+  }
+}
 
 export default function Home() {
+  useEffect(() => {
+    // Load itch.io API script
+    const script = document.createElement('script');
+    script.src = 'https://static.itch.io/api.js';
+    script.type = 'text/javascript';
+    script.onload = () => {
+      // Initialize itch.io buy button after script loads
+      const buyButton = document.getElementById('home_buy_button');
+      if (window.Itch && buyButton) {
+        window.Itch.attachBuyButton(buyButton, {
+          user: "moz91",
+          game: "gamepilot-v11"
+        });
+      }
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -105,12 +141,23 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-8">
             Join thousands of gamers who have already transformed their experience with GamePilot.
           </p>
-          <Link 
-            href="https://www.patreon.com/posts/gamepilot-v1-its-151426657?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
-            className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-xl inline-block"
-          >
-            Download on Patreon
-          </Link>
+          
+          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-md mx-auto">
+            <h3 className="text-xl font-bold mb-4">Get GamePilot v1.1</h3>
+            <p className="text-gray-400 mb-6">
+              Download for free or make a donation to support development.
+            </p>
+            
+            {/* Itch.io Buy Button */}
+            <button id="home_buy_button" className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-xl w-full">
+              Download for free or make a donation
+            </button>
+
+            <div className="text-gray-500 text-sm mt-4">
+              <p>Secure payment through itch.io</p>
+              <p>Instant download after purchase</p>
+            </div>
+          </div>
         </div>
       </section>
 
