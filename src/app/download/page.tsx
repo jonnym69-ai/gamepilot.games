@@ -93,6 +93,28 @@ export default function Download() {
               Access Your Download
             </Link>
           </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-4">Want to support development?</h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all"
+              >
+                Get GamePilot 1.1 to 1.2 on Patreon
+              </Link>
+              <Link 
+                href="https://www.patreon.com/posts/gamepilot-v1-its-151426657?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all"
+              >
+                Get Original GamePilot v1
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
