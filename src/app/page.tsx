@@ -92,19 +92,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">5K+</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">2.5K+</div>
               <p className="text-gray-300">Active Gamers</p>
-              <p className="text-sm text-gray-500">Using GamePilot</p>
+              <p className="text-sm text-gray-500">and growing daily</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">50K+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">15K+</div>
               <p className="text-gray-300">Games Discovered</p>
-              <p className="text-sm text-gray-500">Through recommendations</p>
+              <p className="text-sm text-gray-500">and growing daily</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-pink-400 mb-2">100K+</div>
+              <div className="text-4xl md:text-5xl font-bold text-pink-400 mb-2">25K+</div>
               <p className="text-gray-300">Achievements Earned</p>
-              <p className="text-sm text-gray-500">Community-wide</p>
+              <p className="text-sm text-gray-500">and growing daily</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">24/7</div>
