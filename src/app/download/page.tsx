@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
 
 // TypeScript declaration for itch.io API
 declare global {
@@ -13,30 +12,6 @@ declare global {
 }
 
 export default function Download() {
-  useEffect(() => {
-    // Load itch.io API script
-    const script = document.createElement('script');
-    script.src = 'https://static.itch.io/api.js';
-    script.type = 'text/javascript';
-    script.onload = () => {
-      // Initialize itch.io buy button after script loads
-      const buyButton = document.getElementById('buy_button');
-      if (window.Itch && buyButton) {
-        window.Itch.attachBuyButton(buyButton, {
-          user: "moz91",
-          game: "gamepilot-v11"
-        });
-      }
-    };
-    document.head.appendChild(script);
-
-    return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -69,11 +44,18 @@ export default function Download() {
               Get the latest version of GamePilot with all features and updates.
             </p>
             
-            {/* Itch.io Buy Button */}
-            <div className="mb-8">
-              <button id="buy_button" className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-xl">
-                Download for free or make a donation
-              </button>
+            {/* Itch.io Embed Iframe for GamePilot V1.1 */}
+            <div className="flex justify-center mb-8">
+              <iframe 
+                frameBorder="0" 
+                src="https://itch.io/embed/4368866" 
+                width="552" 
+                height="167"
+                className="max-w-full"
+                title="GamePilot V1.1 on itch.io"
+              >
+                <a href="https://moz91.itch.io/gamepilot-v11">GamePilot V1.1 by MoZ91</a>
+              </iframe>
             </div>
 
             <div className="text-gray-500 text-sm">
