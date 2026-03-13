@@ -33,9 +33,9 @@ export default function Download() {
       {/* Download Content */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">Get GamePilot</h1>
+          <h1 className="text-5xl font-bold mb-6">Download GamePilot</h1>
           <p className="text-xl text-gray-300 mb-12">
-            Purchase your copy of GamePilot and enhance your gaming experience today!
+            Download GamePilot and enhance your gaming experience today!
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
@@ -59,13 +59,13 @@ export default function Download() {
             </div>
 
             <div className="text-gray-500 text-sm">
-              <p>Secure payment through itch.io</p>
-              <p>Instant download after purchase</p>
+              <p>Secure download through itch.io</p>
+              <p>Pay what you want or download for free</p>
             </div>
           </div>
 
           <div className="mt-12">
-            <h3 className="text-xl font-bold mb-4">Already purchased?</h3>
+            <h3 className="text-xl font-bold mb-4">Already downloaded?</h3>
             <Link 
               href="https://moz91.itch.io/gamepilot-v11" 
               target="_blank"
@@ -76,8 +76,21 @@ export default function Download() {
             </Link>
           </div>
 
-          <div className="mt-8">
-            <h3 className="text-xl font-bold mb-4">Want to support development?</h3>
+          <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-2xl p-8 border border-purple-600/30">
+            <h3 className="text-2xl font-bold mb-4">🎨 Unlock Premium Features with Patreon</h3>
+            <p className="text-gray-300 mb-6">
+              Subscribe to the GamePilot Patreon to unlock exclusive themes and get your name on the Founders Board in the app!
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-black/30 p-4 rounded-lg">
+                <h4 className="font-bold text-purple-400 mb-2">✨ Exclusive Themes</h4>
+                <p className="text-sm text-gray-400">Access premium color schemes and customization options</p>
+              </div>
+              <div className="bg-black/30 p-4 rounded-lg">
+                <h4 className="font-bold text-blue-400 mb-2">🏆 Founders Board</h4>
+                <p className="text-sm text-gray-400">Your name displayed in the app as a supporter</p>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
