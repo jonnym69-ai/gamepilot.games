@@ -119,8 +119,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">See GamePilot in Action</h2>
           <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30">
-            <img src="/gifs/gp gif1.gif" alt="GamePilot Demo" className="w-full h-full object-cover" />
+            <img src="/gifs/gp gif1.gif" alt="GamePilot Library View" className="w-full h-full object-cover" />
           </div>
+          <p className="text-center text-gray-400 mt-4">Browse your gaming library with flexible views and get personalized recommendations based on your mood and preferences</p>
         </div>
       </section>
 
@@ -134,13 +135,14 @@ export default function Home() {
             {/* Feature 1 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-4">Find Your Perfect Play</h3>
+                <h3 className="text-3xl font-bold mb-4">Smart Game Discovery</h3>
                 <p className="text-gray-400 text-lg mb-4">Get personalized game recommendations based on your mood, available time, and favorite genres. Never waste time deciding what to play again.</p>
               </div>
               <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
-                <img src="/gifs/gp gif 2.gif" alt="Find Your Perfect Play Demo" className="w-full h-full object-cover" />
+                <img src="/gifs/gp gif 2.gif" alt="Smart Game Discovery Demo" className="w-full h-full object-cover" />
               </div>
             </div>
+            <p className="text-center text-gray-400 mt-2">GamePilot analyzes your library and suggests the perfect game for your current mood and time constraints</p>
 
             {/* Feature 2 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
@@ -148,10 +150,11 @@ export default function Home() {
                 <img src="/gifs/gp gif 3.gif" alt="Surprise Me Demo" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-4">Surprise Me</h3>
+                <h3 className="text-3xl font-bold mb-4">Surprise Me Feature</h3>
                 <p className="text-gray-400 text-lg mb-4">Feeling adventurous? Let GamePilot pick a random game from your library. Discover games you forgot you owned.</p>
               </div>
             </div>
+            <p className="text-center text-gray-400 mt-2">Let GamePilot randomly select a game from your collection - perfect for when you can't decide what to play</p>
 
             {/* Feature 3 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -163,6 +166,7 @@ export default function Home() {
                 <img src="/gifs/gp gif 4.gif" alt="Rediscover Hidden Gems Demo" className="w-full h-full object-cover" />
               </div>
             </div>
+            <p className="text-center text-gray-400 mt-2">GamePilot identifies underplayed games in your library and brings them to your attention</p>
 
             {/* Feature 4 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
@@ -170,21 +174,23 @@ export default function Home() {
                 <img src="/gifs/gp gif 5.gif" alt="Detailed Gaming Stats Demo" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-4">Detailed Gaming Stats</h3>
+                <h3 className="text-3xl font-bold mb-4">Comprehensive Gaming Statistics</h3>
                 <p className="text-gray-400 text-lg mb-4">Track real playtime data, see your gaming habits, and understand your gaming identity through comprehensive statistics.</p>
               </div>
             </div>
+            <p className="text-center text-gray-400 mt-2">Monitor your gaming patterns with detailed statistics, playtime tracking, and habit analysis</p>
 
             {/* Feature 5 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-4">Achievements &amp; XP</h3>
+                <h3 className="text-3xl font-bold mb-4">Achievements &amp; XP System</h3>
                 <p className="text-gray-400 text-lg mb-4">Earn XP and unlock achievements for playing your games. Gamify your gaming experience and track your progress.</p>
               </div>
               <div className="bg-gray-800 rounded-lg overflow-hidden border border-purple-600/30 aspect-video">
                 <img src="/gifs/gp gif 6.gif" alt="Achievements and XP Demo" className="w-full h-full object-cover" />
               </div>
             </div>
+            <p className="text-center text-gray-400 mt-2">Level up your gaming experience with XP points, achievements, and comprehensive progress tracking</p>
 
             {/* Additional Features Grid */}
             <div className="grid md:grid-cols-2 gap-8 mt-16">
