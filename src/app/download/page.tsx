@@ -39,22 +39,22 @@ export default function Download() {
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-            <h2 className="text-2xl font-bold mb-6">GamePilot v1.1</h2>
+            <h2 className="text-2xl font-bold mb-6">GamePilot v1.2 - Latest Version</h2>
             <p className="text-gray-400 mb-8">
-              Get the latest version of GamePilot with all features and updates.
+              Get the newest version of GamePilot with enhanced features and improvements.
             </p>
             
-            {/* Itch.io Embed Iframe for GamePilot V1.1 */}
+            {/* Itch.io Embed Iframe for GamePilot V1.2 */}
             <div className="flex justify-center mb-8">
               <iframe 
                 frameBorder="0" 
-                src="https://itch.io/embed/4368866" 
-                width="552" 
-                height="167"
+                src="https://itch.io/embed/4386676?linkback=true&border_width=0&bg_color=496a31&link_color=71fa5b" 
+                width="550" 
+                height="165"
                 className="max-w-full"
-                title="GamePilot V1.1 on itch.io"
+                title="GamePilot 1.2 on itch.io"
               >
-                <a href="https://moz91.itch.io/gamepilot-v11">GamePilot V1.1 by MoZ91</a>
+                <a href="https://moz91.itch.io/gamepilot-12">Gamepilot 1.2 by MoZ91</a>
               </iframe>
             </div>
 
@@ -67,7 +67,7 @@ export default function Download() {
           <div className="mt-12">
             <h3 className="text-xl font-bold mb-4">Already downloaded?</h3>
             <Link 
-              href="https://moz91.itch.io/gamepilot-v11" 
+              href="https://moz91.itch.io/gamepilot-12" 
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all inline-block"
