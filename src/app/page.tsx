@@ -73,13 +73,13 @@ export default function Home() {
               href="/download" 
               className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg"
             >
-              Download for Free
+              Download GamePilot 1.2 Free
             </Link>
             <Link 
               href="#features" 
               className="px-10 py-5 border-2 border-purple-600 text-white font-bold rounded-lg hover:bg-purple-600/10 transition-colors text-lg"
             >
-              See What's Included
+              See What&apos;s Included
             </Link>
           </div>
           <p className="text-gray-400 text-sm">
@@ -88,33 +88,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Community Stats */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900/20 to-blue-900/20 border-y border-gray-800">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">2.5K+</div>
-              <p className="text-gray-300">Active Gamers</p>
-              <p className="text-sm text-gray-500">and growing daily</p>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">15K+</div>
-              <p className="text-gray-300">Games Discovered</p>
-              <p className="text-sm text-gray-500">and growing daily</p>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-pink-400 mb-2">25K+</div>
-              <p className="text-gray-300">Achievements Earned</p>
-              <p className="text-sm text-gray-500">and growing daily</p>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">24/7</div>
-              <p className="text-gray-300">Community Support</p>
-              <p className="text-sm text-gray-500">On Discord</p>
-            </div>
+      {/* Find Your Perfect Play Spotlight */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900/60 border-y border-gray-800">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Find Your Perfect Play</p>
+            <h2 className="text-4xl font-bold mb-4">Tell GamePilot Your Mood, Time, and Platform</h2>
+            <p className="text-gray-300 mb-6 text-lg">
+              Type in how much time you have, what vibe you&apos;re feeling, or the platform you want to use. GamePilot scans your entire library, cross-checks playtime, backlog status, and multiplatform installs, then serves up three tailored picks so you can launch instantly.
+            </p>
+            <ul className="space-y-3 mb-8 text-gray-300">
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Custom sliders for mood, intensity, multiplayer preference, and session length</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Auto-filtering for games you own across Steam, Epic, Game Pass, and more</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Instant launch shortcuts plus backlog reminders so nothing gathers dust</span>
+              </li>
+            </ul>
+            <Link
+              href="/download"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition"
+            >
+              Try Find Your Perfect Play →
+            </Link>
+          </div>
+          <div className="bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30">
+            <img src="/gifs/gp gif 2.gif" alt="Find Your Perfect Play Flow" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
+
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">See GamePilot in Action</h2>
@@ -154,7 +163,7 @@ export default function Home() {
                 <p className="text-gray-400 text-lg mb-4">Feeling adventurous? Let GamePilot pick a random game from your library. Discover games you forgot you owned.</p>
               </div>
             </div>
-            <p className="text-center text-gray-400 mt-2">Let GamePilot randomly select a game from your collection - perfect for when you can't decide what to play</p>
+            <p className="text-center text-gray-400 mt-2">Let GamePilot randomly select a game from your collection - perfect for when you can&apos;t decide what to play</p>
 
             {/* Feature 3 with GIF */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -193,7 +202,7 @@ export default function Home() {
             <p className="text-center text-gray-400 mt-2">Level up your gaming experience with XP points, achievements, and comprehensive progress tracking</p>
 
             {/* Additional Features Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mt-16">
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
               <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-purple-600 transition-colors">
                 <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,6 +232,29 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-2">Share Your Gaming Identity</h3>
                 <p className="text-gray-400">Export and share your library, stats, achievements, and profile as images or files. Show off your gaming journey.</p>
               </div>
+            </div>
+
+            <div className="mt-16 bg-gradient-to-r from-purple-900/40 to-blue-900/40 border border-purple-700/40 rounded-2xl p-10">
+              <p className="text-sm uppercase tracking-[0.4em] text-purple-300 mb-4">Supporter Perks</p>
+              <div className="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <p className="text-lg font-bold text-purple-200">Atmosphere Packs</p>
+                  <p className="text-sm text-gray-400">Cinematic overlays & lighting presets</p>
+                </div>
+                <div>
+                  <p className="text-lg font-bold text-purple-200">Button SFX Packs</p>
+                  <p className="text-sm text-gray-400">Swap click sounds with retro or arcade audio</p>
+                </div>
+                <div>
+                  <p className="text-lg font-bold text-purple-200">Music Pack</p>
+                  <p className="text-sm text-gray-400">Lo-fi & synthwave soundtrack for browsing</p>
+                </div>
+                <div>
+                  <p className="text-lg font-bold text-purple-200">Animated Themes</p>
+                  <p className="text-sm text-gray-400">Live backgrounds + parallax hero layouts</p>
+                </div>
+              </div>
+              <p className="text-center text-gray-300 mt-6">Become a supporter to unlock premium customization while keeping GamePilot free for everyone.</p>
             </div>
           </div>
         </div>
