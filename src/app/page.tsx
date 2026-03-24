@@ -59,6 +59,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm uppercase tracking-[0.4em] text-purple-400 mb-4">Local-First Gaming Companion</p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             GamePilot
           </h1>
@@ -66,7 +67,7 @@ export default function Home() {
             Never Stare at Your Game Library Again
           </p>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
-            The intelligent gaming library &amp; launcher that helps you discover what to play. Get personalized game recommendations based on your mood, find hidden gems you&apos;ve forgotten about, track your gaming stats, earn achievements, and share your gaming identity with the community.
+            GamePilot helps you actually use your library. Discover what fits your mood, track meaningful sessions, unlock identity-driven rewards, and build a gaming companion that gets more personal the more you use it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link 
@@ -82,9 +83,12 @@ export default function Home() {
               See What&apos;s Included
             </Link>
           </div>
-          <p className="text-gray-400 text-sm">
-            💜 Free to download • 🎮 Works with Steam, Epic, and more • 🌍 Community-driven development
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-gray-400">
+            <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Free latest build</span>
+            <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Local-first progression</span>
+            <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Works with Steam, Epic, and more</span>
+            <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Community-driven development</span>
+          </div>
         </div>
       </section>
 
@@ -131,6 +135,31 @@ export default function Home() {
             <img src="/gifs/gp gif1.gif" alt="GamePilot Library View" className="w-full h-full object-cover" />
           </div>
           <p className="text-center text-gray-400 mt-4">Browse your gaming library with flexible views and get personalized recommendations based on your mood and preferences</p>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Why GamePilot Feels Different</h2>
+          <p className="text-center text-gray-400 mb-16 max-w-3xl mx-auto">Built to make your library more usable now, while growing into a deeper progression and discovery companion over time.</p>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <h3 className="text-xl font-bold mb-3">Local-First by Design</h3>
+              <p className="text-gray-400">Your stats, progression, recommendations, and identity are designed around your own device and your own library.</p>
+            </div>
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <h3 className="text-xl font-bold mb-3">Built Around Real Play</h3>
+              <p className="text-gray-400">GamePilot is moving toward fairer session-based progression, where real play matters more than just launching a game.</p>
+            </div>
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <h3 className="text-xl font-bold mb-3">Smarter Recommendations</h3>
+              <p className="text-gray-400">Perfect Play, Surprise Me, Rediscover, and Continue Playing are all designed to become more useful the more you use GamePilot.</p>
+            </div>
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <h3 className="text-xl font-bold mb-3">Progression With Personality</h3>
+              <p className="text-gray-400">Unlock themes, audio, layouts, cosmetics, and supporter perks that make GamePilot feel more like your own space.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -271,25 +300,29 @@ export default function Home() {
       </section>
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Join the GamePilot Community</h2>
+          <h2 className="text-4xl font-bold mb-6">Built for the Long Game</h2>
           <p className="text-xl text-gray-300 mb-12">
-            Thousands of gamers are already using GamePilot to discover, track, and share their gaming journey. Transform how you experience your game library.
+            GamePilot already helps you discover what to play and express your gaming identity. The roadmap pushes that further with fairer progression, deeper stats, better goals, and richer recaps without losing the local-first feel.
           </p>
           
           <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl p-12 border border-purple-600/30 mb-8">
-            <h3 className="text-2xl font-bold mb-6">Get Started in Seconds</h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <h3 className="text-2xl font-bold mb-6">What&apos;s Coming Next</h3>
+            <div className="grid md:grid-cols-2 gap-6 mb-10 text-left">
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">1</div>
-                <p className="text-gray-300">Download GamePilot</p>
+                <div className="text-lg font-bold text-purple-300 mb-2">Fairer Session-Based Progression</div>
+                <p className="text-gray-300">A small launch reward, bigger session rewards, and a progression loop tied more closely to real play.</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">2</div>
-                <p className="text-gray-300">Connect Your Libraries</p>
+                <div className="text-lg font-bold text-purple-300 mb-2">Unified Stats and Smarter Picks</div>
+                <p className="text-gray-300">A cleaner stats backbone feeding recommendations, profile identity, active-day history, and session trends.</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
-                <p className="text-gray-300">Start Discovering</p>
+                <div className="text-lg font-bold text-purple-300 mb-2">Weekly Goals and GamePilot Picks</div>
+                <p className="text-gray-300">A mix of system-generated quests and your own curated goals to keep your backlog active.</p>
+              </div>
+              <div>
+                <div className="text-lg font-bold text-purple-300 mb-2">Year in Review and Exports</div>
+                <p className="text-gray-300">Recap pages, milestone highlights, and exportable share cards built from your own local play history.</p>
               </div>
             </div>
             
@@ -302,7 +335,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-400 text-sm">
-            💜 100% Free • 🔒 Your data, your control • 🌍 Community-driven development
+            💜 Free latest build • 🔒 Your data, your control • 🌍 Community-driven development
           </p>
         </div>
       </section>
