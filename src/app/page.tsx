@@ -74,7 +74,7 @@ export default function Home() {
               href="/download" 
               className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg"
             >
-              Download GamePilot 1.2 Free
+              Download GamePilot Update 1.3 Free
             </Link>
             <Link 
               href="#features" 

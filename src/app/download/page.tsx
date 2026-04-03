@@ -39,22 +39,22 @@ export default function Download() {
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-            <h2 className="text-2xl font-bold mb-6">GamePilot v1.2 - Latest Version</h2>
+            <h2 className="text-2xl font-bold mb-6">GamePilot Update 1.3 - Latest Version</h2>
             <p className="text-gray-400 mb-8">
-              Get the newest version of GamePilot with enhanced features and improvements.
+              Your PC library is a playground, not a storefront. Get the newest update with enhanced features and improvements.
             </p>
             
-            {/* Itch.io Embed Iframe for GamePilot V1.2 */}
+            {/* Itch.io Embed Iframe for GamePilot Update 1.3 */}
             <div className="flex justify-center mb-8">
               <iframe 
                 frameBorder="0" 
-                src="https://itch.io/embed/4386676?linkback=true&border_width=0&bg_color=496a31&link_color=71fa5b" 
-                width="550" 
-                height="165"
+                src="https://itch.io/embed/4442348?linkback=true&bg_color=9c483c&fg_color=020202&link_color=1a1a27&border_color=e04c48" 
+                width="552" 
+                height="167"
                 className="max-w-full"
-                title="GamePilot 1.2 on itch.io"
+                title="GamePilot Update 1.3 on itch.io"
               >
-                <a href="https://moz91.itch.io/gamepilot-12">Gamepilot 1.2 by MoZ91</a>
+                <a href="https://moz91.itch.io/gamepilot-update-13">Your PC library is a playground, not a storefront. by MoZ91</a>
               </iframe>
             </div>
 
@@ -64,7 +64,26 @@ export default function Download() {
             </div>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-2 gap-8 text-left">
+          <div className="mt-12 grid md:grid-cols-3 gap-8 text-left">
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <h3 className="text-2xl font-bold mb-2">GamePilot v1.2 — Previous Release</h3>
+              <p className="text-sm text-gray-500 mb-4">Stable version before Update 1.3</p>
+              <p className="text-gray-400 mb-6">
+                The previous stable version of GamePilot with enhanced features and improvements.
+              </p>
+              <div className="flex justify-center mb-6">
+                <iframe 
+                  frameBorder="0" 
+                  src="https://itch.io/embed/4386676?linkback=true&border_width=0&bg_color=496a31&link_color=71fa5b" 
+                  width="550" 
+                  height="165"
+                  className="max-w-full"
+                  title="GamePilot 1.2 on itch.io"
+                >
+                  <a href="https://moz91.itch.io/gamepilot-12">Gamepilot 1.2 by MoZ91</a>
+                </iframe>
+              </div>
+            </div>
             <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
               <h3 className="text-2xl font-bold mb-2">GamePilot v1.1 — Supporter Build</h3>
               <p className="text-sm text-purple-400 mb-4">Unlock via Patreon (includes supporter perks)</p>
@@ -118,12 +137,12 @@ export default function Download() {
             <h3 className="text-xl font-bold mb-4">Already downloaded?</h3>
             <p className="text-gray-400 mb-4">Use your itch.io library for updates or grab the latest direct link below.</p>
             <Link
-              href="https://moz91.itch.io/gamepilot-12"
+              href="https://moz91.itch.io/gamepilot-update-13"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all inline-block"
             >
-              Open GamePilot 1.2 on itch.io
+              Open GamePilot Update 1.3 on itch.io
             </Link>
           </div>
 
