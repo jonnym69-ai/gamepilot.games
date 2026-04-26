@@ -92,6 +92,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Local-First Pillars */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 border-y border-gray-800 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-center text-sm uppercase tracking-[0.4em] text-purple-400 mb-3">Local-First, Always</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Your Library. Your Machine. Your Data.</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
+              <p className="text-2xl mb-2">🔒</p>
+              <p className="font-bold mb-1">No Account</p>
+              <p className="text-sm text-gray-400">No sign-ups, no logins, no passwords. Install and launch.</p>
+            </div>
+            <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
+              <p className="text-2xl mb-2">📡</p>
+              <p className="font-bold mb-1">No Telemetry</p>
+              <p className="text-sm text-gray-400">GamePilot doesn&apos;t phone home or track your behaviour.</p>
+            </div>
+            <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
+              <p className="text-2xl mb-2">☁️</p>
+              <p className="font-bold mb-1">No Cloud</p>
+              <p className="text-sm text-gray-400">No servers between you and your library. It just runs.</p>
+            </div>
+            <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
+              <p className="text-2xl mb-2">💾</p>
+              <p className="font-bold mb-1">Your Data Stays Local</p>
+              <p className="text-sm text-gray-400">Stats, progression, and identity live on your machine.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Find Your Perfect Play Spotlight */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900/60 border-y border-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">

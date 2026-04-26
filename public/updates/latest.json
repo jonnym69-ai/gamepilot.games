@@ -1,0 +1,17 @@
+{
+  "version": "1.3.0",
+  "name": "GamePilot Update 1.3",
+  "releaseDate": "2026-04-03",
+  "mandatory": false,
+  "notes": "Your PC library is a playground, not a storefront.",
+  "downloads": {
+    "win-x64": {
+      "url": "https://moz91.itch.io/gamepilot-update-13",
+      "sha256": ""
+    }
+  },
+  "links": {
+    "release": "https://moz91.itch.io/gamepilot-update-13",
+    "homepage": "https://gamepilot.games"
+  }
+}
