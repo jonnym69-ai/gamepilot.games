@@ -64,143 +64,30 @@ export default function Download() {
             </div>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold mb-2">GamePilot v1.2 — Previous Release</h3>
-              <p className="text-sm text-gray-500 mb-4">Stable version before Update 1.3</p>
-              <p className="text-gray-400 mb-6">
-                The previous stable version of GamePilot with enhanced features and improvements.
-              </p>
-              <div className="flex justify-center mb-6">
-                <iframe 
-                  frameBorder="0" 
-                  src="https://itch.io/embed/4386676?linkback=true&border_width=0&bg_color=496a31&link_color=71fa5b" 
-                  width="550" 
-                  height="165"
-                  className="max-w-full"
-                  title="GamePilot 1.2 on itch.io"
-                >
-                  <a href="https://moz91.itch.io/gamepilot-12">Gamepilot 1.2 by MoZ91</a>
-                </iframe>
-              </div>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold mb-2">GamePilot v1.1 — Supporter Build</h3>
-              <p className="text-sm text-purple-400 mb-4">Unlock via Patreon (includes supporter perks)</p>
-              <p className="text-gray-400 mb-6">
-                This build adds the first wave of atmosphere packs, button SFX packs, and early animated themes. Available when you support the project on Patreon and receive an instant itch.io key.
-              </p>
-              <div className="flex justify-center mb-6">
-                <iframe
-                  frameBorder="0"
-                  src="https://itch.io/embed/4368866"
-                  width="552"
-                  height="167"
-                  className="max-w-full"
-                  title="GamePilot 1.1 on itch.io"
-                >
-                  <a href="https://moz91.itch.io/gamepilot-v11">GamePilot V1.1 by MoZ91</a>
-                </iframe>
-              </div>
-              <Link
-                href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition"
-              >
-                Become a Supporter & Get v1.1+
-              </Link>
-            </div>
-
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold mb-2">GamePilot 0.1.0 — Legacy Snapshot</h3>
-              <p className="text-sm text-gray-500 mb-4">For nostalgia & archival purposes</p>
-              <p className="text-gray-400 mb-6">
-                Take a tour back to the very first public prototype. This legacy build is preserved for the community and remains pay-what-you-want on itch.io.
-              </p>
-              <div className="flex justify-center">
-                <iframe
-                  frameBorder="0"
-                  src="https://itch.io/embed/4327426?bg_color=2e055a&fg_color=d16607&link_color=624bfd&border_color=63448d"
-                  width="552"
-                  height="167"
-                  className="max-w-full"
-                  title="GamePilot 0.1.0 on itch.io"
-                >
-                  <a href="https://moz91.itch.io/gamepilot">Gamepilot by MoZ91</a>
-                </iframe>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 text-center">
-            <h3 className="text-xl font-bold mb-4">Already downloaded?</h3>
-            <p className="text-gray-400 mb-4">Use your itch.io library for updates or grab the latest direct link below.</p>
-            <Link
-              href="https://moz91.itch.io/gamepilot-update-13"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all inline-block"
-            >
-              Open GamePilot Update 1.3 on itch.io
-            </Link>
-          </div>
-
-          <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-2xl p-8 border border-purple-600/30">
-            <h3 className="text-2xl font-bold mb-4">🎨 Unlock Premium Features with Patreon</h3>
-            <p className="text-gray-300 mb-6">
-              Subscribe to the GamePilot Patreon to unlock exclusive themes and get your name on the Founders Board in the app!
+          <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-2xl p-8 border border-purple-600/30 text-left">
+            <h3 className="text-2xl font-bold mb-4 text-center">🎨 Support GamePilot on Patreon</h3>
+            <p className="text-gray-300 mb-6 text-center">
+              Keep GamePilot free for everyone and unlock extras for yourself.
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="bg-black/30 p-4 rounded-lg">
                 <h4 className="font-bold text-purple-400 mb-2">✨ Exclusive Themes</h4>
-                <p className="text-sm text-gray-400">Access premium color schemes and customization options</p>
+                <p className="text-sm text-gray-400">Access premium colour schemes and customisation options.</p>
               </div>
               <div className="bg-black/30 p-4 rounded-lg">
                 <h4 className="font-bold text-blue-400 mb-2">🏆 Founders Board</h4>
-                <p className="text-sm text-gray-400">Your name displayed in the app as a supporter</p>
+                <p className="text-sm text-gray-400">Your name displayed in the app as a supporter.</p>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
+            <div className="flex justify-center">
+              <Link
+                href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all"
               >
-                Get GamePilot 1.1 to 1.2 on Patreon
+                Become a Supporter
               </Link>
-              <Link 
-                href="https://www.patreon.com/posts/gamepilot-v1-its-151426657?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all"
-              >
-                Get Original GamePilot v1
-              </Link>
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <h3 className="text-xl font-bold mb-4">Try GamePilot 0.1.0</h3>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-2xl mx-auto">
-              <p className="text-gray-400 mb-6">
-                Get the early version of GamePilot to see how it all began!
-              </p>
-              
-              {/* Itch.io Embed Iframe */}
-              <div className="flex justify-center">
-                <iframe 
-                  frameBorder="0" 
-                  src="https://itch.io/embed/4327426?bg_color=2e055a&fg_color=d16607&link_color=624bfd&border_color=63448d" 
-                  width="552" 
-                  height="167"
-                  className="max-w-full"
-                  title="GamePilot 0.1.0 on itch.io"
-                >
-                  <a href="https://moz91.itch.io/gamepilot">Gamepilot by MoZ91</a>
-                </iframe>
-              </div>
             </div>
           </div>
         </div>
