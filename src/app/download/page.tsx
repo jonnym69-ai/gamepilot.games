@@ -2,15 +2,6 @@
 
 import Link from "next/link";
 
-// TypeScript declaration for itch.io API
-declare global {
-  interface Window {
-    Itch?: {
-      attachBuyButton: (element: HTMLElement, options: { user: string; game: string }) => void;
-    };
-  }
-}
-
 export default function Download() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -35,32 +26,41 @@ export default function Download() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Download GamePilot</h1>
           <p className="text-xl text-gray-300 mb-12">
-            Download GamePilot and enhance your gaming experience today!
+            Get the latest version for Windows 10/11 (64-bit).
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-            <h2 className="text-2xl font-bold mb-6">GamePilot Update 1.3 - Latest Version</h2>
+            <h2 className="text-2xl font-bold mb-2">GamePilot V1.5.0</h2>
+            <p className="text-sm text-purple-400 mb-6">Latest release</p>
             <p className="text-gray-400 mb-8">
-              Your PC library is a playground, not a storefront. Get the newest update with enhanced features and improvements.
+              Download the installer, source code, or grab the latest release directly from GitHub. GamePilot is free — no account required.
             </p>
             
-            {/* Itch.io Embed Iframe for GamePilot Update 1.3 */}
-            <div className="flex justify-center mb-8">
-              <iframe 
-                frameBorder="0" 
-                src="https://itch.io/embed/4442348?linkback=true&bg_color=9c483c&fg_color=020202&link_color=1a1a27&border_color=e04c48" 
-                width="552" 
-                height="167"
-                className="max-w-full"
-                title="GamePilot Update 1.3 on itch.io"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <a
+                href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.5.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-all inline-flex items-center justify-center gap-2"
               >
-                <a href="https://moz91.itch.io/gamepilot-update-13">Your PC library is a playground, not a storefront. by MoZ91</a>
-              </iframe>
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Download V1.5.0 from GitHub
+              </a>
+              <a
+                href="https://moz91.itch.io/gamepilot-update-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
+              >
+                Get it on itch.io
+              </a>
             </div>
 
             <div className="text-gray-500 text-sm">
-              <p>Secure download through itch.io</p>
-              <p>Pay what you want or download for free</p>
+              <p>Free download. Windows 10/11 (64-bit).</p>
+              <p>Source code available on GitHub.</p>
             </div>
           </div>
 
@@ -112,15 +112,16 @@ export default function Download() {
             <div>
               <h4 className="font-semibold mb-4">Community</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://youtube.com/@mozmakesstuff?si=OzuCVp-HYAmjv7Zm" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
+                <li><a href="https://youtube.com/@mozog91" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
+                <li><a href="https://x.com/Mozog91" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X / Twitter</a></li>
                 <li><a href="https://discord.gg/K9sEA4dn" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Discord</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://moz91.itch.io/gamepilot-v11" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">itch.io</a></li>
-                <li><a href="https://www.patreon.com/posts/gamepilot-v1-its-151426657?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
+                <li><a href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.5.0" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Releases</a></li>
+                <li><a href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
               </ul>
             </div>
           </div>
