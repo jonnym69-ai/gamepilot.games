@@ -27,14 +27,18 @@ export default function Home() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-sm uppercase tracking-[0.4em] text-purple-400 mb-4">Local-First Gaming Companion</p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-900/30 border border-purple-600/30 text-purple-300 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-green-400"></span>
+            V1.5.0 now available
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             GamePilot
           </h1>
           <p className="text-2xl md:text-4xl font-semibold text-white mb-6">
             Finally know what to play next
           </p>
-          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
-            Your PC games are scattered across Steam, Epic, GOG, Xbox, itch.io, folders, subscriptions, and a backlog you forgot existed. GamePilot brings them together into one local-first game library manager — no accounts, no telemetry, no cloud dependency. It catalogs your collection, tracks every play session, learns what you like, and surfaces the right game at the right time. Think of it as the launcher your library deserves.
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+            One local-first launcher for every game you own. Auto-detects your library, tracks every session, and surfaces the right game at the right time — no account, no telemetry, no cloud required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link 
@@ -56,6 +60,16 @@ export default function Home() {
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">No telemetry</span>
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Windows 10/11</span>
           </div>
+        </div>
+      </section>
+
+      {/* Visual Proof */}
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-5xl mx-auto">
+          <div className="aspect-video bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30 shadow-2xl shadow-purple-900/20">
+            <img src="/gifs/gp gif1.gif" alt="GamePilot library and recommendations in action" className="w-full h-full object-cover" />
+          </div>
+          <p className="text-center text-gray-500 mt-4 text-sm">Your games, your stats, your next favourite play — all in one place.</p>
         </div>
       </section>
 
@@ -96,42 +110,62 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-4">What you get</h2>
           <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">One app that turns your scattered library into a coherent, playable collection.</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Unified Library</h3>
-              <p className="text-gray-400">Auto-detect games from Steam, Epic, GOG, Xbox, Ubisoft, and local folders. One grid, every game.</p>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Organise</p>
+              <h3 className="text-2xl font-bold mb-4">Your library, unified</h3>
+              <ul className="space-y-4 text-gray-400">
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Unified Library</strong> — Auto-detect games from Steam, Epic, GOG, Xbox, Ubisoft, and local folders.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Library Reclaimer</strong> — Find cold, heavy games eating disk space and decide what&apos;s worth keeping.</span>
+                </li>
+              </ul>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Smart Play Tracking</h3>
-              <p className="text-gray-400">Launch any game from GamePilot and watch playtime, sessions, streaks, and habits build automatically.</p>
+
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Play</p>
+              <h3 className="text-2xl font-bold mb-4">Pick what to play next</h3>
+              <ul className="space-y-4 text-gray-400">
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Recommendations</strong> — Perfect Play, Surprise Me, Continue Playing, and Rediscover picks.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Backlog Intelligence</strong> — See which unfinished games deserve your time next.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Free Games Radar</strong> — Discover current free-to-keep offers across PC stores.</span>
+                </li>
+              </ul>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Recommendations That Fit You</h3>
-              <p className="text-gray-400">Perfect Play mood filters, Surprise Me, Continue Playing, and Rediscover picks based on your actual library.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Backlog Intelligence</h3>
-              <p className="text-gray-400">See which unfinished games deserve your time next, sorted by momentum, playtime invested, and your own ratings.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Progression &amp; Rewards</h3>
-              <p className="text-gray-400">Earn XP, level up, unlock themes, card styles, layouts, and seasonal rewards just by playing games.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Free Games Radar</h3>
-              <p className="text-gray-400">Discover current free-to-keep offers across PC stores without leaving the app.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Year in Review</h3>
-              <p className="text-gray-400">Exportable yearly recaps of your play habits, top games, and standout moments.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Library Reclaimer</h3>
-              <p className="text-gray-400">Find cold, heavy games eating disk space and decide what&apos;s worth keeping.</p>
-            </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-600 transition-colors">
-              <h3 className="text-xl font-bold mb-3">Performance Cockpit</h3>
-              <p className="text-gray-400">Hardware analysis against your library so you know what&apos;ll run before you install.</p>
+
+            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Track</p>
+              <h3 className="text-2xl font-bold mb-4">Track and improve</h3>
+              <ul className="space-y-4 text-gray-400">
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Smart Play Tracking</strong> — Playtime, sessions, streaks, and habits build automatically.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Progression &amp; Rewards</strong> — Earn XP, unlock themes, card styles, layouts, and seasonal rewards.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Year in Review</strong> — Exportable recaps of your play habits and standout moments.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-500 mt-1">•</span>
+                  <span><strong className="text-white">Performance Cockpit</strong> — Know what will run before you install.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -256,7 +290,7 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <p className="text-gray-400 text-center">&copy; 2024 GamePilot. All rights reserved.</p>
+            <p className="text-gray-400 text-center">&copy; 2026 GamePilot. All rights reserved.</p>
           </div>
         </div>
       </footer>
