@@ -14,8 +14,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GamePilot - Smart Gaming Library & Launcher",
-  description: "Discover what to play with AI recommendations, track your gaming stats, earn achievements, and connect with the gaming community.",
+  title: "GamePilot - Local-First Gaming Library & Launcher",
+  description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+  openGraph: {
+    title: "GamePilot - Local-First Gaming Library & Launcher",
+    description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+    type: "website",
+    url: "https://gamepilot.games",
+    siteName: "GamePilot",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GamePilot - Local-First Gaming Library & Launcher",
+    description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+  },
 };
 
 export default function RootLayout({
