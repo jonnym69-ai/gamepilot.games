@@ -26,32 +26,32 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm uppercase tracking-[0.4em] text-purple-400 mb-4">Local-First Gaming Companion</p>
+          <p className="text-sm uppercase tracking-[0.4em] text-purple-400 mb-4">Local-First Decision Layer</p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-900/30 border border-purple-600/30 text-purple-300 text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400"></span>
-            V1.5.0 now available
+            V1.7.0 now available
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             GamePilot
           </h1>
           <p className="text-2xl md:text-4xl font-semibold text-white mb-6">
-            Finally know what to play next
+            Stop scrolling. Start playing.
           </p>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            One local-first launcher for every game you own. Auto-detects your library, tracks every session, and surfaces the right game at the right time — no account, no telemetry, no cloud required.
+            GamePilot isn&apos;t a launcher. It&apos;s a local-first decision-making layer for your game library. It learns your taste, tracks every session, and tells you what to play next — even when Steam is offline.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link 
               href="/download" 
               className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg"
             >
-              Download GamePilot V1.5.0 Free
+              Download GamePilot V1.7.0 Free
             </Link>
             <Link 
               href="#features" 
               className="px-10 py-5 border-2 border-purple-600 text-white font-bold rounded-lg hover:bg-purple-600/10 transition-colors text-lg"
             >
-              See What&apos;s Included
+              See How It Works
             </Link>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-gray-400">
@@ -63,13 +63,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Problem Statement */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900/30 border-y border-gray-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Too many games. Not enough decisions.</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            You own hundreds of games across Steam, Epic, GOG, Xbox, and more. Every evening you spend more time browsing than playing. GamePilot fixes that by turning your library into a personal recommendation engine.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-6 text-left">
+            <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
+              <p className="text-purple-400 font-bold mb-2">🎮 Library scattered</p>
+              <p className="text-gray-400 text-sm">Games across launchers, subscriptions, and folders with no single view.</p>
+            </div>
+            <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
+              <p className="text-purple-400 font-bold mb-2">⏳ Decision fatigue</p>
+              <p className="text-gray-400 text-sm">Spending 20 minutes choosing what to play before you even launch.</p>
+            </div>
+            <div className="bg-gray-900 rounded-xl p-6 border border-gray-800">
+              <p className="text-purple-400 font-bold mb-2">📊 No insight</p>
+              <p className="text-gray-400 text-sm">You forget what you enjoy, when you play, and what&apos;s gathering dust.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Visual Proof */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-black">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-5xl mx-auto">
           <div className="aspect-video bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30 shadow-2xl shadow-purple-900/20">
-            <img src="/gifs/gp gif1.gif" alt="GamePilot library and recommendations in action" className="w-full h-full object-cover" />
+            <img src="/gifs/gamepilot perfect play.gif" alt="GamePilot Perfect Play recommendations" className="w-full h-full object-cover" />
           </div>
-          <p className="text-center text-gray-500 mt-4 text-sm">Your games, your stats, your next favourite play — all in one place.</p>
+          <p className="text-center text-gray-500 mt-4 text-sm">Perfect Play picks a game based on your mood, time, genre, and actual library.</p>
         </div>
       </section>
 
@@ -77,8 +101,8 @@ export default function Home() {
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-y border-gray-800 bg-black">
         <div className="max-w-6xl mx-auto">
           <p className="text-center text-sm uppercase tracking-[0.4em] text-purple-400 mb-3">Local-First, Always</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Your Library. Your Machine. Your Data.</h2>
-          <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">Your library data never leaves your machine. No login walls, no cloud sync anxiety, no tracking. GamePilot is yours — permanently.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Your Library. Your Stats. Your Machine.</h2>
+          <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">Your gaming data never leaves your machine. No login walls, no cloud sync anxiety, no tracking. GamePilot is yours — permanently.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
               <p className="text-2xl mb-2">🔒</p>
@@ -98,146 +122,158 @@ export default function Home() {
             <div className="bg-gray-900/70 border border-gray-800 rounded-xl p-6 text-center">
               <p className="text-2xl mb-2">💾</p>
               <p className="font-bold mb-1">Your Data Stays Local</p>
-              <p className="text-sm text-gray-400">Stats, progression, and identity live on your machine.</p>
+              <p className="text-sm text-gray-400">Stats, identity, and insights live on your machine. Backup and restore included.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You Get */}
+      {/* Three Pillars */}
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">What you get</h2>
-          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">One app that turns your scattered library into a coherent, playable collection.</p>
+          <h2 className="text-4xl font-bold text-center mb-4">Built around your gaming identity</h2>
+          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Identity, Insights, and Smart Shelves work together to turn your library into something that actually knows you.</p>
           
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Organise</p>
-              <h3 className="text-2xl font-bold mb-4">Your library, unified</h3>
-              <ul className="space-y-4 text-gray-400">
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Unified Library</strong> — Auto-detect games from Steam, Epic, GOG, Xbox, Ubisoft, and local folders.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Library Reclaimer</strong> — Find cold, heavy games eating disk space and decide what&apos;s worth keeping.</span>
-                </li>
-              </ul>
+            <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+              <div className="aspect-video bg-gray-800">
+                <img src="/gifs/gamepilot identity.gif" alt="Gaming Identity" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-8">
+                <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Identity</p>
+                <h3 className="text-2xl font-bold mb-4">Who you are as a gamer</h3>
+                <p className="text-gray-400">Built from real playtime, top genres, signature games, and your unique taste. GamePilot turns your habits into a profile that feels personal — not generic.</p>
+              </div>
             </div>
 
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Play</p>
-              <h3 className="text-2xl font-bold mb-4">Pick what to play next</h3>
-              <ul className="space-y-4 text-gray-400">
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Recommendations</strong> — Perfect Play, Surprise Me, Continue Playing, and Rediscover picks.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Backlog Intelligence</strong> — See which unfinished games deserve your time next.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Free Games Radar</strong> — Discover current free-to-keep offers across PC stores.</span>
-                </li>
-              </ul>
+            <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+              <div className="aspect-video bg-gray-800">
+                <img src="/gifs/gamepilot insights.gif" alt="Habit Insights" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-8">
+                <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Insights</p>
+                <h3 className="text-2xl font-bold mb-4">Understand your habits</h3>
+                <p className="text-gray-400">Peak play times, session trends, mood distribution, library health, and time-of-day heatmaps. See your gaming life clearly — without sharing it with anyone.</p>
+              </div>
             </div>
 
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-4">Track</p>
-              <h3 className="text-2xl font-bold mb-4">Track and improve</h3>
-              <ul className="space-y-4 text-gray-400">
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Smart Play Tracking</strong> — Playtime, sessions, streaks, and habits build automatically.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Progression &amp; Rewards</strong> — Earn XP, unlock themes, card styles, layouts, and seasonal rewards.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Year in Review</strong> — Exportable recaps of your play habits and standout moments.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-purple-500 mt-1">•</span>
-                  <span><strong className="text-white">Performance Cockpit</strong> — Know what will run before you install.</span>
-                </li>
-              </ul>
+            <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+              <div className="aspect-video bg-gray-800">
+                <img src="/gifs/gamepilot smart shelves.gif" alt="Smart Shelves" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-8">
+                <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Smart Shelves</p>
+                <h3 className="text-2xl font-bold mb-4">Curated without the clutter</h3>
+                <p className="text-gray-400">Auto-curated collections like Continue This, Backlog Rediscovery, Comfort Picks, Hidden Gems, Deep Dives, One More Run, Quick Fix, Mood Match, and more.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Support GamePilot */}
+      {/* How It Works */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Support GamePilot</h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <p className="text-2xl mb-3">💜</p>
-              <h3 className="text-xl font-bold mb-3">Free Forever</h3>
-              <p className="text-gray-400">Every core feature is free. No ads, no upsells inside the app.</p>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">How it works</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4 border border-purple-600/30">
+                <span className="text-2xl font-bold text-purple-300">1</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Scan</h3>
+              <p className="text-gray-400 text-sm">GamePilot reads your library from Steam, Epic, GOG, Xbox, Ubisoft, and local folders.</p>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-purple-700/40">
-              <p className="text-2xl mb-3">🎨</p>
-              <h3 className="text-xl font-bold mb-3">Patreon</h3>
-              <p className="text-gray-400">Supporter tiers with XP boosts, bonus themes, and founder recognition.</p>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4 border border-purple-600/30">
+                <span className="text-2xl font-bold text-purple-300">2</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Play</h3>
+              <p className="text-gray-400 text-sm">Launch games through GamePilot. It tracks playtime, sessions, and habits — even when Steam is offline.</p>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-              <p className="text-2xl mb-3">🛒</p>
-              <h3 className="text-xl font-bold mb-3">One-Time Store Unlocks</h3>
-              <p className="text-gray-400">Advanced Theme Builder, layout packs, and future premium tools available as permanent purchases.</p>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4 border border-purple-600/30">
+                <span className="text-2xl font-bold text-purple-300">3</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Learn</h3>
+              <p className="text-gray-400 text-sm">Your taste clusters and gaming identity emerge from your real play data.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4 border border-purple-600/30">
+                <span className="text-2xl font-bold text-purple-300">4</span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Recommend</h3>
+              <p className="text-gray-400 text-sm">Perfect Play suggests the right game for your mood, time, and taste — no AI needed.</p>
             </div>
           </div>
-          <Link
-            href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all inline-block"
-          >
-            Become a Supporter
-          </Link>
         </div>
       </section>
 
-      {/* Follow Along + System Requirements */}
+      {/* Taste Clusters */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Taste Clusters</p>
+            <h2 className="text-4xl font-bold mb-6">Your taste has a name</h2>
+            <p className="text-gray-300 text-lg mb-6">
+              GamePilot finds patterns in your play history and turns them into clusters: Souls-like Specialist, Run Chaser, Precision Platformer, Comfort Co-op, Deep-Dive RPG, and more. They&apos;re not labels from a store — they&apos;re discovered from what you actually play.
+            </p>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Emerges from real playtime, not wishlists or browsing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Updates as your taste evolves</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-purple-400">★</span>
+                <span>Powers recommendations and smart shelves</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30">
+            <img src="/gifs/gamepilot rec reasoning.gif" alt="Recommendation reasoning showing taste clusters" className="w-full h-full object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Grid */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">See it in action</h2>
+          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">A few of the views that make GamePilot feel like it knows your library.</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
+              <img src="/gifs/gamepilot home.gif" alt="GamePilot home dashboard" className="w-full h-full object-cover" />
+            </div>
+            <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
+              <img src="/gifs/gamepilot library reclaimer.gif" alt="Library Reclaimer" className="w-full h-full object-cover" />
+            </div>
+            <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
+              <img src="/gifs/gamepilot wishlist.gif" alt="Wishlist recommendations" className="w-full h-full object-cover" />
+            </div>
+            <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
+              <img src="/gifs/gamepilot smart shelves.gif" alt="Smart Shelves" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Download CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Follow Along</h2>
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <a
-              href="https://youtube.com/@mozog91"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-red-500 hover:text-red-500 transition-colors"
-            >
-              YouTube: @mozog91
-            </a>
-            <a
-              href="https://x.com/Mozog91"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-400 hover:text-blue-400 transition-colors"
-            >
-              X / Twitter: @Mozog91
-            </a>
-            <a
-              href="https://discord.gg/K9sEA4dn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-indigo-500 hover:text-indigo-500 transition-colors"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">System Requirements</h3>
-            <p className="text-gray-400">Windows 10/11 (64-bit). GamePilot runs as a local Electron app.</p>
-          </div>
+          <h2 className="text-4xl font-bold mb-6">Ready to stop scrolling?</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Download GamePilot for Windows and turn your library into something that actually helps you decide what to play.
+          </p>
+          <Link 
+            href="/download" 
+            className="px-12 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg inline-block"
+          >
+            Download GamePilot V1.7.0 Free
+          </Link>
+          <p className="text-gray-500 text-sm mt-6">Windows 10/11 (64-bit) • No account required • No telemetry</p>
         </div>
       </section>
 
@@ -304,56 +340,56 @@ const testimonials = [
     name: "James M.",
     role: "Discord Member",
     colors: "from-purple-400 to-blue-400",
-    text: "The mood-based recommendations are incredible. I finally have a system that understands what I want to play based on how I&apos;m feeling. Game-changer!"
+    text: "The Perfect Play recommendations are spot on. I finally have a system that understands what I want to play based on my mood and time. Game-changer!"
   },
   {
     initials: "SL",
     name: "Sarah L.",
     role: "Active Community Member",
     colors: "from-pink-400 to-red-400",
-    text: "The achievements and XP system makes gaming more rewarding. Love tracking my stats and sharing my gaming identity with friends!"
+    text: "Seeing my gaming identity and taste clusters form over time is addictive. It feels like the app actually gets me without spying on me."
   },
   {
     initials: "MK",
     name: "Marcus K.",
     role: "Founder Member",
     colors: "from-green-400 to-cyan-400",
-    text: "GamePilot has completely changed how I manage my library. The community is amazing and the dev listens to feedback. Highly recommend!"
+    text: "GamePilot has completely changed how I manage my library. The Smart Shelves keep my backlog manageable and the dev listens to feedback. Highly recommend!"
   },
   {
     initials: "AJ",
     name: "Alex J.",
     role: "Community Moderator",
     colors: "from-orange-400 to-yellow-400",
-    text: "As a moderator, I see how much the community loves this app. The dev is responsive, features get implemented based on feedback, and the support is incredible. Best gaming community I&apos;ve been part of!"
+    text: "As a moderator, I see how much the community loves the insights. The local-first approach is a huge selling point for privacy-conscious gamers."
   },
   {
     initials: "RP",
     name: "Rachel P.",
     role: "Patreon Supporter",
     colors: "from-indigo-400 to-purple-400",
-    text: "Rediscover feature saved my gaming life. Found so many games with low playtime that I actually love. Absolutely worth supporting!"
+    text: "Backlog Rediscovery found games I forgot I owned. The Smart Shelves make my library feel curated instead of chaotic. Absolutely worth supporting!"
   },
   {
     initials: "TW",
     name: "Tyler W.",
     role: "Discord Member",
     colors: "from-cyan-400 to-blue-400",
-    text: "The gaming links hub keeps all my favorite sites organized. Simple but incredibly useful. GamePilot just gets it."
+    text: "The stats and habit insights are unreal. Finally understanding when and how I play has made my gaming time way more satisfying."
   },
   {
     initials: "EK",
     name: "Emma K.",
     role: "Active Community Member",
     colors: "from-rose-400 to-pink-400",
-    text: "Sharing my profile with friends is so cool. They can see my stats, achievements, and gaming habits. Love the social aspect!"
+    text: "Sharing my gaming identity with friends is so cool. They can see my taste clusters and top games without me giving up any privacy."
   },
   {
     initials: "DC",
     name: "David C.",
     role: "Early Adopter",
     colors: "from-amber-400 to-orange-400",
-    text: "The stats page is incredible. Finally understand my gaming patterns. This app is a must-have for any serious gamer."
+    text: "The insights page is incredible. Finally understand my gaming patterns. This app is a must-have for any serious gamer."
   }
 ];
 

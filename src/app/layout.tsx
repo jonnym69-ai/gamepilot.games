@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GamePilot - Local-First Gaming Library & Launcher",
-  description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+  title: "GamePilot - Local-First Gaming Decision Layer",
+  description: "Finally know what to play next. Build your gaming identity, discover taste clusters, and get Perfect Play recommendations — all local, no accounts, no telemetry, no cloud.",
   openGraph: {
-    title: "GamePilot - Local-First Gaming Library & Launcher",
-    description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+    title: "GamePilot - Local-First Gaming Decision Layer",
+    description: "Finally know what to play next. Build your gaming identity, discover taste clusters, and get Perfect Play recommendations — all local, no accounts, no telemetry, no cloud.",
     type: "website",
     url: "https://gamepilot.games",
     siteName: "GamePilot",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GamePilot - Local-First Gaming Library & Launcher",
-    description: "Finally know what to play next. Track your gaming stats, earn rewards, and connect with the community — all without accounts, telemetry, or cloud dependency.",
+    title: "GamePilot - Local-First Gaming Decision Layer",
+    description: "Finally know what to play next. Build your gaming identity, discover taste clusters, and get Perfect Play recommendations — all local, no accounts, no telemetry, no cloud.",
   },
 };
 

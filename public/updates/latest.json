@@ -1,17 +1,17 @@
 {
-  "version": "1.5.0",
-  "name": "GamePilot V1.5.0",
-  "releaseDate": "2026-06-21",
+  "version": "1.7.0",
+  "name": "GamePilot V1.7.0",
+  "releaseDate": "2026-07-02",
   "mandatory": false,
-  "notes": "Unified library, smart play tracking, recommendations, backlog intelligence, progression and rewards, free games radar, year in review, library reclaimer, and performance cockpit.",
+  "notes": "Gaming identity, taste clusters, smart shelves, habit insights, year in review, performance cockpit, and local-first backup/restore.",
   "downloads": {
     "win-x64": {
-      "url": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.5.0",
+      "url": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.7.0",
       "sha256": ""
     }
   },
   "links": {
-    "release": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.5.0",
+    "release": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.7.0",
     "homepage": "https://gamepilot.games"
   }
 }
