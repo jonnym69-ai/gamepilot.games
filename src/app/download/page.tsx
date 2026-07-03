@@ -38,7 +38,7 @@ export default function Download() {
             
             <div className="flex flex-col gap-4 justify-center mb-6">
               <a
-                href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.7.0"
+                href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-all inline-flex items-center justify-center gap-3 text-lg"
@@ -50,7 +50,7 @@ export default function Download() {
               </a>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.7.0"
+                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
@@ -130,7 +130,7 @@ export default function Download() {
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/V1.7.0" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Releases</a></li>
+                <li><a href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Releases</a></li>
                 <li><a href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
               </ul>
             </div>

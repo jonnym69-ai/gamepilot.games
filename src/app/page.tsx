@@ -136,8 +136,8 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-              <div className="aspect-video bg-gray-800">
-                <img src="/gifs/gamepilot identity.png" alt="Gaming Identity" className="w-full h-full object-cover" />
+              <div className="aspect-[16/3] bg-gray-900">
+                <img src="/gifs/gamepilot identity.png" alt="Gaming Identity" className="w-full h-full object-contain" />
               </div>
               <div className="p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Identity</p>
@@ -147,8 +147,8 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-              <div className="aspect-video bg-gray-800">
-                <img src="/gifs/gamepilot insights.gif" alt="Habit Insights" className="w-full h-full object-cover" />
+              <div className="aspect-[16/3] bg-gray-900">
+                <img src="/gifs/gamepilot insights.gif" alt="Habit Insights" className="w-full h-full object-contain" />
               </div>
               <div className="p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Insights</p>
