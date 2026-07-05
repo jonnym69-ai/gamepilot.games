@@ -58,7 +58,7 @@ export default function Download() {
                   Source code on GitHub
                 </a>
                 <a
-                  href="https://moz91.itch.io/gamepilot-update-13"
+                  href="https://moz91.itch.io/gamepilot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
@@ -91,7 +91,7 @@ export default function Download() {
             </div>
             <div className="flex justify-center">
               <Link
-                href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+                href="https://www.patreon.com/cw/GamePilot"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all"
@@ -131,7 +131,8 @@ export default function Download() {
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="https://github.com/jonnym69-ai/the-gamepilot/releases" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Releases</a></li>
-                <li><a href="https://www.patreon.com/posts/gamepilot-1-1-to-152727989?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
+                <li><a href="https://moz91.itch.io/gamepilot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">itch.io</a></li>
+                <li><a href="https://www.patreon.com/cw/GamePilot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
               </ul>
             </div>
           </div>
