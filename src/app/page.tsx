@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
-              <img src="/gifs/a 3_4 angled disc lo.png" alt="GamePilot Logo" className="w-8 h-8 object-contain" />
+              <Image src="/gifs/a 3_4 angled disc lo.png" alt="GamePilot Logo" width={32} height={32} className="object-contain" />
               <h1 className="text-2xl font-bold text-white">GamePilot</h1>
             </div>
             <div className="flex space-x-8">
@@ -91,8 +92,8 @@ export default function Home() {
       {/* Visual Proof */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-5xl mx-auto">
-          <div className="aspect-video bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30 shadow-2xl shadow-purple-900/20">
-            <img src="/gifs/gamepilot perfect play.gif" alt="GamePilot Perfect Play recommendations" className="w-full h-full object-cover" />
+          <div className="aspect-video relative bg-gray-800 rounded-2xl overflow-hidden border border-purple-600/30 shadow-2xl shadow-purple-900/20">
+            <Image src="/gifs/gamepilot perfect play.gif" alt="GamePilot Perfect Play recommendations" fill sizes="(max-width: 1024px) 100vw, 1024px" className="object-cover" />
           </div>
           <p className="text-center text-gray-500 mt-4 text-sm">Perfect Play: mood + time picks from your own library — with a reason attached, not a black box.</p>
         </div>
@@ -137,8 +138,8 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-              <div className="aspect-video bg-gray-900">
-                <img src="/gifs/gamepilot insights.gif" alt="GamePilot gamer identity and insights" className="w-full h-full object-cover" />
+              <div className="aspect-video relative bg-gray-900">
+                <Image src="/gifs/gamepilot insights.gif" alt="GamePilot gamer identity and insights" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Persona &amp; Insights</p>
@@ -148,8 +149,8 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-              <div className="aspect-video bg-gray-900">
-                <img src="/gifs/gamepilot champions.gif" alt="GamePilot champions section" className="w-full h-full object-cover" />
+              <div className="aspect-video relative bg-gray-900">
+                <Image src="/gifs/gamepilot champions.gif" alt="GamePilot champions section" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Champions &amp; Eras</p>
@@ -159,8 +160,8 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-              <div className="aspect-video bg-gray-800">
-                <img src="/gifs/gamepilot library today.gif" alt="GamePilot library view" className="w-full h-full object-cover" />
+              <div className="aspect-video relative bg-gray-800">
+                <Image src="/gifs/gamepilot library today.gif" alt="GamePilot library view" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="p-8">
                 <p className="text-sm uppercase tracking-[0.3em] text-purple-400 mb-3">Your Library Today</p>
@@ -276,16 +277,16 @@ export default function Home() {
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">All from the current build on Windows.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
-              <img src="/gifs/gamepilot home.gif" alt="GamePilot home screen" className="w-full h-full object-cover" />
+              <Image src="/gifs/gamepilot home.gif" alt="GamePilot home screen" width={720} height={369} className="w-full h-auto" />
             </div>
             <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
-              <img src="/gifs/gamepilot library today.gif" alt="Your Library Today" className="w-full h-full object-cover" />
+              <Image src="/gifs/gamepilot library today.gif" alt="Your Library Today" width={720} height={369} className="w-full h-auto" />
             </div>
             <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
-              <img src="/gifs/gamepilot wishlist.gif" alt="GamePilot wishlist" className="w-full h-full object-cover" />
+              <Image src="/gifs/gamepilot wishlist.gif" alt="GamePilot wishlist" width={720} height={369} className="w-full h-auto" />
             </div>
             <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-800">
-              <img src="/gifs/gamepilot guided tour.gif" alt="GamePilot welcome guided tour" className="w-full h-full object-cover" />
+              <Image src="/gifs/gamepilot guided tour.gif" alt="GamePilot welcome guided tour" width={720} height={369} className="w-full h-auto" />
             </div>
           </div>
         </div>
