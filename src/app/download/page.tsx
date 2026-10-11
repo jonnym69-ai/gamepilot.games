@@ -130,7 +130,7 @@ export default function Download() {
             <div>
               <h4 className="font-semibold mb-4">Community</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://youtube.com/@mozog91" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
+                <li><a href="https://youtube.com/@projectmoz1" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a></li>
                 <li><a href="https://x.com/Mozog91" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X / Twitter</a></li>
                 <li><a href="https://discord.gg/K9sEA4dn" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Discord</a></li>
               </ul>

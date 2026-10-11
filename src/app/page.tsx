@@ -378,7 +378,7 @@ export default function Home() {
                 </svg>
               </a>
               <a 
-                href="https://youtube.com/@mozog91" 
+                href="https://youtube.com/@projectmoz1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-red-500 transition-colors"
