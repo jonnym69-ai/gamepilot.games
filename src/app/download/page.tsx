@@ -26,14 +26,14 @@ export default function Download() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Download GamePilot</h1>
           <p className="text-xl text-gray-300 mb-12">
-            Get the latest version for Windows 10/11 (64-bit).
+            Windows 10/11, Linux in beta. No account, no cloud, no telemetry.
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
             <h2 className="text-2xl font-bold mb-2">GamePilot V1.7.0</h2>
             <p className="text-sm text-purple-400 mb-6">Latest release</p>
             <p className="text-gray-400 mb-8">
-              Download the Windows installer from GitHub. No account required, no telemetry, no cloud dependency.
+              One build, and everything in it is free. Your data is a folder of files on your PC — readable and deletable.
             </p>
             
             <div className="flex flex-col gap-4 justify-center mb-6">
@@ -50,12 +50,12 @@ export default function Download() {
               </a>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0"
+                  href="https://github.com/jonnym69-ai/the-gamepilot/releases"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
                 >
-                  Source code on GitHub
+                  Linux AppImage (beta)
                 </a>
                 <a
                   href="https://moz91.itch.io/gamepilot"
@@ -65,12 +65,20 @@ export default function Download() {
                 >
                   Get it on itch.io
                 </a>
+                <a
+                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
+                >
+                  Source code
+                </a>
               </div>
             </div>
 
-            <div className="text-gray-500 text-sm">
-              <p>Free download. Windows 10/11 (64-bit).</p>
-              <p>Grab the .exe installer from the GitHub release page.</p>
+            <div className="text-gray-500 text-sm space-y-1">
+              <p><span className="text-gray-300 font-semibold">Windows:</span> SmartScreen will warn about the unsigned installer — click <span className="text-gray-300">More info → Run anyway</span>.</p>
+              <p><span className="text-gray-300 font-semibold">Linux (beta):</span> x86_64 AppImage on the releases page. Steam-first; works on Steam Deck in Desktop Mode — add it as a non-Steam game for Gaming Mode.</p>
             </div>
           </div>
 
