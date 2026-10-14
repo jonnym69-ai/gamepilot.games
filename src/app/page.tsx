@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -30,23 +27,23 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.4em] text-purple-400 mb-4">Local-First · No Account · No Telemetry</p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-900/30 border border-purple-600/30 text-purple-300 text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400"></span>
-            V1.7.0 now available
+            Latest version out now
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             GamePilot
           </h1>
           <p className="text-2xl md:text-4xl font-semibold text-white mb-6">
-            Pick tonight&apos;s game in 30 seconds.
+            Pick tonight&apos;s game in 30 seconds.<br />Keep the story of how you play.
           </p>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            GamePilot scans your games across Steam, Epic, GOG, Battle.net, itch, Xbox, and more — asks what mood you&apos;re in and how long you&apos;ve got — then picks something from what you already own. While you play, it keeps the record Steam never bothered to: real sessions, streaks, and eras.
+            GamePilot scans Steam, Epic, GOG, Battle.net, Riot, itch.io, Xbox, and more into one library — then recommends what to play based on your mood and how long you&apos;ve got. And it remembers: your sessions, your streaks, your persona, and the eras it names for you. The Zomboid Era. The Soulslikes Winter. All local, no account, MIT licensed — go read the code yourself.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link 
               href="/download" 
               className="px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg"
             >
-              Download GamePilot V1.7.0 Free
+              Download GamePilot Free
             </Link>
             <Link 
               href="#features" 
@@ -59,6 +56,7 @@ export default function Home() {
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Completely free</span>
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">No account required</span>
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">No telemetry</span>
+            <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Open source · MIT</span>
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Windows 10/11</span>
             <span className="px-3 py-1 rounded-full border border-gray-700 bg-gray-900/60">Linux beta</span>
           </div>
@@ -303,7 +301,7 @@ export default function Home() {
             href="/download" 
             className="px-12 py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 text-lg shadow-lg inline-block"
           >
-            Download GamePilot V1.7.0 Free
+            Download GamePilot Free
           </Link>
           <p className="text-gray-500 text-sm mt-6">Windows 10/11 • Linux beta • No account required • No telemetry</p>
         </div>
@@ -315,27 +313,53 @@ export default function Home() {
           <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-2xl p-8 border border-purple-600/30">
             <h2 className="text-3xl font-bold mb-4">Support GamePilot</h2>
             <p className="text-lg text-gray-300 mb-6">
-              GamePilot will always be free. No ads, no subscriptions, no locked features. If you enjoy it, a small donation helps keep development alive and keeps the app independent.
+              GamePilot is free — no ads, no subscriptions, no locked features. If it earns your support, the itch.io page lets you pay what you want.
             </p>
             <a
-              href="https://www.patreon.com/cw/GamePilot"
+              href="https://moz91.itch.io/gamepilot"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all inline-block"
             >
-              Become a Patreon Supporter
+              Support on itch.io
             </a>
           </div>
         </div>
       </section>
 
-      {/* Community Testimonials Carousel */}
+      {/* Community */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Loved by Gamers</h2>
-          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">See what the community is saying about GamePilot</p>
-          
-          <TestimonialCarousel />
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Built in the open</h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            GamePilot is a one-person project. Real feedback shapes what gets built — bugs, ideas, and honest complaints are all welcome.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://moz91.itch.io/gamepilot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              itch.io page &amp; comments
+            </a>
+            <a
+              href="https://github.com/jonnym69-ai/the-gamepilot/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              GitHub issues
+            </a>
+            <a
+              href="https://discord.gg/K9sEA4dn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-colors"
+            >
+              Discord
+            </a>
+          </div>
         </div>
       </section>
 
@@ -353,17 +377,6 @@ export default function Home() {
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-              </a>
-              <a 
-                href="https://www.patreon.com/cw/GamePilot" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
-                aria-label="Patreon"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.82 2.592C9.93.374 4.8 3.811 4.8 9.04v11.478c0 .46.37.83.83.83h3.82c.46 0 .83-.37.83-.83V9.17c0-2.53 1.808-4.566 4.336-4.62 2.52-.054 4.666 2.032 4.666 4.557v11.41c0 .46.37.83.83.83h3.82c.46 0 .83-.37.83-.83V9.04c0-5.337-4.82-8.97-9.92-6.449z"/>
                 </svg>
               </a>
               <a 
@@ -415,147 +428,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
-  );
-}
-
-const testimonials = [
-  {
-    initials: "JM",
-    name: "James M.",
-    role: "Discord Member",
-    colors: "from-purple-400 to-blue-400",
-    text: "The Perfect Play recommendations are spot on. I finally have a system that understands what I want to play based on my mood and time. Game-changer!"
-  },
-  {
-    initials: "SL",
-    name: "Sarah L.",
-    role: "Active Community Member",
-    colors: "from-pink-400 to-red-400",
-    text: "Seeing my gaming identity and taste clusters form over time is addictive. It feels like the app actually gets me without spying on me."
-  },
-  {
-    initials: "MK",
-    name: "Marcus K.",
-    role: "Founder Member",
-    colors: "from-green-400 to-cyan-400",
-    text: "GamePilot has completely changed how I manage my library. The Smart Shelves keep my backlog manageable and the dev listens to feedback. Highly recommend!"
-  },
-  {
-    initials: "AJ",
-    name: "Alex J.",
-    role: "Community Moderator",
-    colors: "from-orange-400 to-yellow-400",
-    text: "As a moderator, I see how much the community loves the insights. The local-first approach is a huge selling point for privacy-conscious gamers."
-  },
-  {
-    initials: "RP",
-    name: "Rachel P.",
-    role: "Patreon Supporter",
-    colors: "from-indigo-400 to-purple-400",
-    text: "Backlog Rediscovery found games I forgot I owned. The Smart Shelves make my library feel curated instead of chaotic. Absolutely worth supporting!"
-  },
-  {
-    initials: "TW",
-    name: "Tyler W.",
-    role: "Discord Member",
-    colors: "from-cyan-400 to-blue-400",
-    text: "The stats and habit insights are unreal. Finally understanding when and how I play has made my gaming time way more satisfying."
-  },
-  {
-    initials: "EK",
-    name: "Emma K.",
-    role: "Active Community Member",
-    colors: "from-rose-400 to-pink-400",
-    text: "Sharing my gaming identity with friends is so cool. They can see my taste clusters and top games without me giving up any privacy."
-  },
-  {
-    initials: "DC",
-    name: "David C.",
-    role: "Early Adopter",
-    colors: "from-amber-400 to-orange-400",
-    text: "The insights page is incredible. Finally understand my gaming patterns. This app is a must-have for any serious gamer."
-  }
-];
-
-function TestimonialCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const testimonial = testimonials[currentIndex];
-
-  return (
-    <div className="relative">
-      <div className="bg-gray-900 p-12 rounded-lg border border-gray-800 min-h-96 flex flex-col justify-between">
-        <div>
-          <div className="flex items-center mb-6">
-            <div className={`w-16 h-16 bg-gradient-to-br ${testimonial.colors} rounded-full flex items-center justify-center text-white font-bold text-lg`}>
-              {testimonial.initials}
-            </div>
-            <div className="ml-6">
-              <p className="font-semibold text-white text-lg">{testimonial.name}</p>
-              <p className="text-sm text-gray-400">{testimonial.role}</p>
-            </div>
-          </div>
-          <p className="text-gray-300 italic text-lg mb-6">&quot;{testimonial.text}&quot;</p>
-        </div>
-        <div className="flex text-yellow-400 text-xl">★★★★★</div>
-      </div>
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full transition-colors"
-        aria-label="Previous testimonial"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full transition-colors"
-        aria-label="Next testimonial"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-
-      {/* Dot Indicators */}
-      <div className="flex justify-center gap-2 mt-8">
-        {testimonials.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`h-3 rounded-full transition-all ${
-              index === currentIndex
-                ? "bg-purple-600 w-8"
-                : "bg-gray-600 w-3 hover:bg-gray-500"
-            }`}
-            aria-label={`Go to testimonial ${index + 1}`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

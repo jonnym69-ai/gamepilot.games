@@ -1,17 +1,17 @@
 {
-  "version": "1.7.0",
-  "name": "GamePilot V1.7.0",
-  "releaseDate": "2026-07-02",
+  "version": "1.9.1",
+  "name": "GamePilot 1.9.1",
+  "releaseDate": "2026-10-11",
   "mandatory": false,
-  "notes": "Gaming identity, taste clusters, smart shelves, habit insights, year in review, performance cockpit, and local-first backup/restore.",
+  "notes": "Latest GamePilot build — see GitHub releases for full notes.",
   "downloads": {
     "win-x64": {
-      "url": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0",
+      "url": "https://github.com/jonnym69-ai/the-gamepilot/releases/latest",
       "sha256": ""
     }
   },
   "links": {
-    "release": "https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0",
+    "release": "https://github.com/jonnym69-ai/the-gamepilot/releases/latest",
     "homepage": "https://gamepilot.games"
   }
 }

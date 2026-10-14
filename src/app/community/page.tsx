@@ -230,17 +230,6 @@ export default function Community() {
                 </svg>
               </a>
               <a 
-                href="https://www.patreon.com/cw/GamePilot" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
-                aria-label="Patreon"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.82 2.592C9.93.374 4.8 3.811 4.8 9.04v11.478c0 .46.37.83.83.83h3.82c.46 0 .83-.37.83-.83V9.17c0-2.53 1.808-4.566 4.336-4.62 2.52-.054 4.666 2.032 4.666 4.557v11.41c0 .46.37.83.83.83h3.82c.46 0 .83-.37.83-.83V9.04c0-5.337-4.82-8.97-9.92-6.449z"/>
-                </svg>
-              </a>
-              <a 
                 href="https://moz91.itch.io/gamepilot" 
                 target="_blank" 
                 rel="noopener noreferrer"

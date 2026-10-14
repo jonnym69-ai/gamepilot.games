@@ -30,15 +30,15 @@ export default function Download() {
           </p>
 
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-            <h2 className="text-2xl font-bold mb-2">GamePilot V1.7.0</h2>
-            <p className="text-sm text-purple-400 mb-6">Latest release</p>
+            <h2 className="text-2xl font-bold mb-2">GamePilot</h2>
+            <p className="text-sm text-purple-400 mb-6">Latest version</p>
             <p className="text-gray-400 mb-8">
               One build, and everything in it is free. Your data is a folder of files on your PC — readable and deletable.
             </p>
             
             <div className="flex flex-col gap-4 justify-center mb-6">
               <a
-                href="https://github.com/jonnym69-ai/the-gamepilot/releases"
+                href="https://github.com/jonnym69-ai/the-gamepilot/releases/latest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-all inline-flex items-center justify-center gap-3 text-lg"
@@ -50,7 +50,7 @@ export default function Download() {
               </a>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://github.com/jonnym69-ai/the-gamepilot/releases"
+                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/latest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
@@ -66,7 +66,7 @@ export default function Download() {
                   Get it on itch.io
                 </a>
                 <a
-                  href="https://github.com/jonnym69-ai/the-gamepilot/releases/tag/v1.7.0"
+                  href="https://github.com/jonnym69-ai/the-gamepilot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-all inline-flex items-center justify-center gap-2"
@@ -83,29 +83,19 @@ export default function Download() {
           </div>
 
           <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-blue-900/30 rounded-2xl p-8 border border-purple-600/30 text-left">
-            <h3 className="text-2xl font-bold mb-4 text-center">🎨 Support GamePilot on Patreon</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center">Support GamePilot</h3>
             <p className="text-gray-300 mb-6 text-center">
-              Keep GamePilot free for everyone and unlock extras for yourself.
+              GamePilot is free — no ads, no subscriptions, no locked features. If it earns your support, the itch.io page lets you pay what you want.
             </p>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-black/30 p-4 rounded-lg">
-                <h4 className="font-bold text-purple-400 mb-2">✨ Exclusive Themes</h4>
-                <p className="text-sm text-gray-400">Access premium colour schemes and customisation options.</p>
-              </div>
-              <div className="bg-black/30 p-4 rounded-lg">
-                <h4 className="font-bold text-blue-400 mb-2">🏆 Founders Board</h4>
-                <p className="text-sm text-gray-400">Your name displayed in the app as a supporter.</p>
-              </div>
-            </div>
             <div className="flex justify-center">
-              <Link
-                href="https://www.patreon.com/cw/GamePilot"
+              <a
+                href="https://moz91.itch.io/gamepilot"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all"
               >
-                Become a Supporter
-              </Link>
+                Support on itch.io
+              </a>
             </div>
           </div>
         </div>
@@ -140,7 +130,6 @@ export default function Download() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="https://github.com/jonnym69-ai/the-gamepilot/releases" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Releases</a></li>
                 <li><a href="https://moz91.itch.io/gamepilot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">itch.io</a></li>
-                <li><a href="https://www.patreon.com/cw/GamePilot" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Patreon</a></li>
               </ul>
             </div>
           </div>
